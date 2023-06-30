@@ -5,44 +5,7 @@
 }
 
 @font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Regular.otf");
+	font-family: "KyivType Title";
+	src: url("../fonts/KyivTypeSans-Regular3.ttf");
 	font-weight: 400;
 }
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Medium.otf");
-	font-weight: 500;
-}
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Light.otf");
-	font-weight: 300;
-}
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Bold.otf");
-	font-weight: 700;
-}
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Black.otf");
-	font-weight: 800;
-}
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Heavy.otf");
-	font-weight: 900;
-}
-
-@font-face {
-	font-family: "KyivType";
-	src: url("../fonts/KyivType/Dmitry\ Rastvortsev\ -\ KyivType\ Sans\ Thin.otf");
-	font-weight: 100;
-}
-

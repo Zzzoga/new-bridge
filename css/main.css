@@ -242,7 +242,7 @@ a.apartment.header__control {
     color: #FFF;
     text-align: center;
     font-size: 112px;
-    /* font-family: KyivType Sans; */
+    font-family: KyivType Title;
     letter-spacing: 31.92px;
     text-transform: uppercase;
 }
@@ -365,6 +365,7 @@ a.menu.header__control:hover > span.menu__lines span.menu__line {
     color: #CFB895;
     font-size: 128px;
     line-height: 120%;
+    font-family: 'KyivType Title';
 }
 
 .apart__count__text {
@@ -777,10 +778,11 @@ h3.news__title {
 .new__bridge {
     color: #CFB895;
     text-align: center;
-    font-size: 216px;
+    font-size: 221px;
     line-height: normal;
     letter-spacing: 39.96px;
     border-top: 1px solid #CFB895;
+    font-family: 'KYIVTYPE TITLE';
 }
 
 .footer__links {
