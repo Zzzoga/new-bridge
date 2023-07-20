@@ -61,16 +61,21 @@
 	</header>
 
 	<main>
-		<div class="first__screen screen">
-			<div class="screen__wrapper">
-				<div class="screen__subtitle">место для тех, кто ценит и любит себя</div>
-				<div class="screen__title">NEW BRIDGE</div>
-				<div class="screen__more">
-					<div class="more__circle"></div>
-					<div class="more__text">Листайте вниз</div>
+		<div class="scroll__wrapper">
+			<div id="scrolly-video">
+				<div class="screen__wrapper">
+					<div class="top__screen__info">
+						<div class="screen__subtitle">место для тех, кто ценит и любит себя</div>
+						<div class="screen__title">NEW BRIDGE</div>
+					</div>
+					<div class="screen__more">
+						<div class="more__circle"></div>
+						<div class="more__text">Листайте вниз</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 
 		<div class="second__screen screen">
 			<div class="screen__wrapper">
@@ -385,6 +390,13 @@
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+	<script type="text/javascript">
+		new ScrollyVideo({
+		  scrollyVideoContainer: "scrolly-video",
+		  src: "/video/nb_animation_hq.mp4"
+		});
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script>
     SmoothScroll({
