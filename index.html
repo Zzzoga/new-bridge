@@ -21,13 +21,14 @@
 
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="libs/fullpage/fullpage.min.css">
 	
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 
 	<script src="libs/modernizr/modernizr.js"></script>
-
+ 
 </head>
 
 <body>
@@ -40,7 +41,205 @@
 		<div class="loader_inner"></div>
 	</div>
 
-	<header class="header">
+	<div class="modal__nav">
+		<div class="modal__nav__overlay"></div>
+		<div class="modal__nav__wrapper">
+			<div class="modal__nav__items">
+				<div class="modal__nav__title">Главная страница</div>
+				<div class="nav__items__wrapper">
+					<a href="#" class="nav__item item_1">О клубном доме</a>
+					<a href="#" class="nav__item item_2">Преимущества</a>
+					<a href="#" class="nav__item item_3">Расположение</a>
+					<a href="#" class="nav__item item_4">Выбор квартир</a>
+					<a href="#" class="nav__item item_5">Контакты</a>
+				</div>
+				<div class="nav__post__items">
+					<a href="#" class="nav__post__item">Ход строительства</a>
+					<a href="#" class="nav__post__item">Документы</a>
+					<a href="#" class="nav__post__item">Новости</a>
+				</div>
+				<a href="#" class="presentation">
+					<div class="download"></div>
+					<span class="download__text">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</span>
+				</a>
+			</div>
+			<div class="modal__nav__img">
+				<div class="nav__img__wrap">
+					<img src="img/modal__nav__img_1.jpg" alt="">
+				</div>
+				<div class="nav__img__wrap">
+					<img src="img/modal__nav__img_2.jpg" alt="">
+				</div>
+				<div class="nav__img__wrap">
+					<img src="img/modal__nav__img_3.jpg" alt="">
+				</div>
+				<div class="nav__img__wrap">
+					<img src="img/modal__nav__img__4.jpg" alt="">
+				</div>
+				<div class="nav__img__wrap">
+					<img src="img/modal__nav__img__4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__map">
+		<div class="modal__map__wrapper">
+			<div class="modal__map__close">
+				<span class="mmc__text">Закрыть</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+					<line x1="16.9102" y1="0.353569" x2="1.35384" y2="15.9099" stroke="white"/>
+					<line x1="16.2031" y1="15.9099" x2="0.64674" y2="0.353554" stroke="white"/>
+				</svg>
+			</div>
+			<img src="img/map__full.jpg" alt="" class="modal__map__bg">
+			<div class="modal__map__items">
+				<div class="m__map__item river">р. Белая</div>
+				<div class="m__map__item home">Дом Республики</div>
+				<div class="m__map__item mus">Управление мусульман</div>
+				<div class="m__map__item sof">Софьюшкина аллея</div>
+				<div class="m__map__item gafuri">Театр драмы имени М. Гафури</div>
+				<div class="m__map__item lenin">Парк имени Ленина</div>
+				<div class="m__map__item kur">Курултай</div>
+				<div class="m__map__item nb">New Bridge</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__news">
+		<div class="modal__news__wrapper">
+			<div class="modal__news__close">
+				<span class="mmc__text">Закрыть</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+					<line x1="16.9102" y1="0.353569" x2="1.35384" y2="15.9099" stroke="white"/>
+					<line x1="16.2031" y1="15.9099" x2="0.64674" y2="0.353554" stroke="white"/>
+				</svg>
+			</div>
+			<div class="modal__news__content">
+				<div class="mnc__left">
+					<img src="img/modal__news.jpg" alt="">
+				</div>
+				<div class="mnc__right">
+					<div class="mnc__wrapper">
+						<div class="mnc__date">14.06.2023</div>
+						<h3 class="mnc__title">De Finibus Bonorum et Malorum</h3>
+						<div class="mnc__text">
+							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p> 
+							<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__apart">
+		<div class="modal__apart__wrapper">
+			<div class="modal__apart__info">
+				<div class="mai__top">
+					<div class="back__btn">
+						<div class="back__btn__arrow"><img src="img/back__arrow.svg" alt=""></div>
+						<div class="back__btn__text">К выбору этажа</div>
+					</div>
+					<div class="modal__apart__title">Выбрать квартиру</div>
+				</div>
+				<div class="modal__apart__item__info">
+					<div class="maii__square">
+						<span class="maii__value"></span>
+						<span class="maii__text"></span>
+					</div>
+					<div class="maii__floor">
+						<span class="maii__value"></span>
+						<span class="maii__text"></span>
+					</div>
+					<div class="maii__rooms">
+						<span class="maii__value"></span>
+						<span class="maii__text"></span>
+					</div>
+				</div>
+			</div>
+			<div class="modal__apart__items">
+				<div class="modal__apart__item floor__2">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__2.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__2__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__3">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__3.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__3__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__4">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__4.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__4__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__5">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__5.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__5__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__6">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__6.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__6__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__7">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__7.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__7__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__8">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__8.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__8__a1"></div>
+					</div>
+				</div>
+				<div class="modal__apart__item floor__9">
+					<div class="mai__floor__scheme">
+						<img src="img/mai__floor__9.svg" alt="">
+					</div>
+					<div class="mai__floor__scheme">
+						<div class="mai__floor__9__a1"></div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__apart__control">
+				<div class="mac__up mac__control">
+					<img src="img/back__arrow.svg" alt="">
+				</div>
+				<div class="mac__counter">
+					<div class="mac__counter__value">03</div>
+					<div class="mac__counter__floor">этаж</div>
+				</div>
+				<div class="mac__down mac__control">
+					<img src="img/back__arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header active__apart">
 		<div class="header__wrapper">
 			<div class="left__block">
 				<a href="tel:79991234567" class="call__reverse header__control">Заказать звонок</a>
@@ -52,16 +251,16 @@
 				<a href="#" class="menu header__control">
 					<span class="menu__text">Меню</span>
 					<span class="menu__lines">
-						<span class="menu__line"></span>
-						<span class="menu__line"></span>
+						<span class="menu__line first__line"></span>
+						<span class="menu__line second__line"></span>
 					</span>
 				</a>
 			</div>
 		</div>
 	</header>
 
-	<main>
-		<div class="scroll__wrapper">
+	<div class="scroll__video">
+		<div class="scroll__wrapper" id="screen_video">
 			<div id="scrolly-video">
 				<div class="screen__wrapper">
 					<div class="top__screen__info">
@@ -69,312 +268,640 @@
 						<div class="screen__title">NEW BRIDGE</div>
 					</div>
 					<div class="screen__more">
-						<div class="more__circle"></div>
+						<div class="more__circle">
+							<img src="img/more__arrow.svg" alt="">
+						</div>
 						<div class="more__text">Листайте вниз</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+	</div>
 
-		<div class="second__screen screen">
-			<div class="screen__wrapper">
-				<div class="screen__subtitle color">Вы достойны Лучшего, А оно достойно Вас</div>
-				<div class="screen__title">О КЛУБНОМ ДОМЕ</div>
-				<div class="screen__text">
-					<p>Террасы с лучшими видами на любимую часть города. Не более 5 минут, до знаковых мест Уфы: первая уфимская соборная мечеть, Софьюшкина аллея, Сад Салавата Юлаева.</p>
-					<p>В тишине и рядом с главной транспортной артерией города — проспектом Салавата Юлаева.</p>
-				</div>
-			</div>
-		</div>
+	<main class="wrapper">
 
-		<div class="third__screen screen">
-			<div class="screen__wrapper">
-				<div class="apart__count">
-					<div class="apart__count__item">
-						<div class="apart__count__num">1</div>
-						<div class="apart__count__text">Дом</div>
-					</div>
-					<div class="apart__count__item">
-						<div class="apart__count__num">59</div>
-						<div class="apart__count__text">квартир</div>
-					</div>
-					<div class="apart__count__item">
-						<div class="apart__count__num">21</div>
-						<div class="apart__count__text">планировка</div>
-					</div>
-					<div class="apart__count__item">
-						<div class="apart__count__num">6</div>
-						<div class="apart__count__text">пентхаусов</div>
+		<div id="fullpage">
+
+			<section class="screen_1 screen section" id="screen_1">
+				<div class="screen__wrapper">
+					<div class="screen__subtitle color">Вы достойны Лучшего, А оно достойно Вас</div>
+					<div class="screen__title">О КЛУБНОМ ДОМЕ</div>
+					<div class="screen__text">
+						<p>Террасы с лучшими видами на любимую часть города. Не более 5 минут, до знаковых мест Уфы: первая уфимская соборная мечеть, Софьюшкина аллея, Сад Салавата Юлаева.</p>
+						<p>В тишине и рядом с главной транспортной артерией города — проспектом Салавата Юлаева.</p>
 					</div>
 				</div>
-				<div class="apart__bottom">
-					<img src="img/third__screen.jpg" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="fourth__screen screen">
-			<div class="screen__wrapper">
-				<img src="img/fourth__screen.jpg" alt="">
-			</div>
-		</div>
-
-		<div class="fifth__screen screen">
-			<div class="screen__wrapper">
-				<img src="img/fifth__screen.jpg" alt="">
-			</div>
-		</div>
-
-		<div class="sixth__screen screen">
-			<div class="screen__wrapper row">
-				<div class="wrapper__left">
-					<div class="inner__wrapper__left">
-						<div class="screen__subtitle color">преимущества</div>
-						<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
-						<div class="screen__text left">
-							<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-							<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+			</section>
+	
+			<section class="screen_2 screen section" id="screen_2">
+				<div class="screen__wrapper">
+					<div class="apart__count">
+						<div class="apart__count__item">
+							<div class="apart__count__num">1</div>
+							<div class="apart__count__text">Дом</div>
+						</div>
+						<div class="apart__count__item">
+							<div class="apart__count__num">59</div>
+							<div class="apart__count__text">квартир</div>
+						</div>
+						<div class="apart__count__item">
+							<div class="apart__count__num">21</div>
+							<div class="apart__count__text">планировка</div>
+						</div>
+						<div class="apart__count__item">
+							<div class="apart__count__num">6</div>
+							<div class="apart__count__text">пентхаусов</div>
 						</div>
 					</div>
+					<div class="apart__bottom fp-bg">
+						<img src="img/third__screen.jpg" alt="">
+					</div>
 				</div>
-				<div class="wrapper__right">
-					<img src="img/sixth__screen.jpg" alt="">
+			</section>
+	
+			<section class="screen_3 screen section" id="screen_3">
+				<div class="screen__wrapper">
+					<img src="img/fourth__screen.jpg" alt="">
 				</div>
-			</div>
-		</div>
-
-		<div class="seventh__screen screen">
-			<div class="screen__wrapper row-reverse">
-				<div class="wrapper__left">
-					<div class="inner__wrapper__left">
-						<div class="screen__subtitle color">преимущества</div>
-						<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
-						<div class="screen__text left">
-							<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+			</section>
+	
+			<section class="screen_4 screen section" id="screen_4">
+				<div class="screen__wrapper">
+					<img src="img/fifth__screen.jpg" alt="">
+				</div>
+			</section>
+	
+			<section class="screen_5 screen section" id="screen_5">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+							</div>
 						</div>
-						<div class="slider__wrapper">
-							<div class="slider__item">
-								<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-								<div class="slider__control">
-									<div class="slider__arrow prev"></div>
-									<div class="slider__counter">
-										<span class="color">1</span>/10
+					</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_6 screen section" id="screen_6">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
 									</div>
-									<div class="slider__arrow next"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="wrapper__right">
-					<img src="img/seventh__screen.jpg" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="eighth__screen screen">
-			<div class="screen__wrapper">
-				<div class="map__icons">
-					<a class="map__icon hero">
-						<img src="img/hero.svg" alt="">
-						<span class="map__icon__text">Памятник <br>Салавата Юлаева</span>
-					</a>
-					<a class="map__icon dinamo">
-						<img src="img/dinamo.svg" alt="">
-						<span class="map__icon__text">с. Динамо</span>
-					</a>
-					<a class="map__icon republic">
-						<img src="img/republic.svg" alt="">
-						<span class="map__icon__text">Дом Республики</span>
-					</a>
-					<a class="map__icon matrosov">
-						<img src="img/garden.svg" alt="">
-						<span class="map__icon__text">сад. Александра <br>Матросова</span>
-					</a>
-					<a class="map__icon aksakov">
-						<img src="img/garden.svg" alt="">
-						<span class="map__icon__text">Cад культуры и <br>отдыха имени <br>Аксакова</span>
-					</a>
-					<a class="map__icon tower">
-						<img src="img/tower.svg" alt="">
-						<span class="map__icon__text">Первая соборная <br>мечеть</span>
-					</a>
-					<a class="map__icon new__bridge">
-						<img src="img/NB.svg" alt="">
-					</a>
-				</div>
-				<div class="map__imgs">
-					<div class="map__img hero"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img dinamo"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img republic"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img matrosov"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img aksakov"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img tower"><img src="img/dinamo__img.jpg" alt=""></div>
-					<div class="map__img new__bridge"><img src="img/dinamo__img.jpg" alt=""></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="nineth__screen screen">
-			<div class="screen__wrapper row">
-				<div class="wrapper__left">
-					<div class="inner__wrapper__left">
-						<div class="title__block inner__item">
-							<div class="screen__title small">Ход строительства</div>
-							<a href="#" class="play__btn">видео-онлайн</a>
-						</div>
-						<div class="year__block inner__item">
-							<div class="inner__item__title">год</div>
-							<div class="inner__item__value year active">2023</div>
-						</div>
-						<div class="month__block inner__item">
-							<div class="inner__item__title">месяц</div>
-							<div class="inner__item__value month active">Июнь</div>
-							<div class="inner__item__value month">Июль</div>
-							<div class="inner__item__value month">Август</div>
-							<div class="inner__item__value month">Сентябрь</div>
-						</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
 					</div>
 				</div>
-				<div class="wrapper__right relative">
-					<a href="#" class="play__btn absolute">Смотреть</a>
-					<img src="img/nineth__screen.jpg" alt="">
-				</div>
-			</div>
-		</div>
-
-		<div class="tenth__screen screen slider__screen">
-			<div class="screen__wrapper relative">
-				<div class="slider__control absolute">
-					<div class="slider__arrow prev"></div>
-					<div class="slider__counter">
-						<span class="color">1</span>/10
-					</div>
-					<div class="slider__arrow next"></div>
-				</div>
-				<img src="img/tenth__screen.jpg" alt="">
-			</div>
-		</div>
-
-		<div class="eleventh__screen screen">
-			<div class="screen__wrapper">
-				<div class="screen__title small">Документы</div>
-				<div class="docs__wrapper">
-					<div class="doc__item">
-						<div class="doc__left">
-							<a href="#" class="doc__btn"></a>
-							<div class="doc__info">
-								<div class="doc__title">Документ номер 1</div>
-								<div class="doc__file">PDF, 817,76 KB</div>
+			</section>
+	
+			<section class="screen_7 screen section" id="screen_7">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
 							</div>
 						</div>
-						<div class="doc__date doc__file">01.04.2023</div>
 					</div>
-					<div class="doc__item">
-						<div class="doc__left">
-							<a href="#" class="doc__btn"></a>
-							<div class="doc__info">
-								<div class="doc__title">Документ номер 2</div>
-								<div class="doc__file">PDF, 817,76 KB</div>
-							</div>
-						</div>
-						<div class="doc__date doc__file">01.04.2023</div>
-					</div>
-					<div class="doc__item">
-						<div class="doc__left">
-							<a href="#" class="doc__btn"></a>
-							<div class="doc__info">
-								<div class="doc__title">Документ номер 3</div>
-								<div class="doc__file">PDF, 817,76 KB</div>
-							</div>
-						</div>
-						<div class="doc__date doc__file">01.04.2023</div>
-					</div>
-					<div class="doc__item">
-						<div class="doc__left">
-							<a href="#" class="doc__btn"></a>
-							<div class="doc__info">
-								<div class="doc__title">Документ номер 4</div>
-								<div class="doc__file">PDF, 817,76 KB</div>
-							</div>
-						</div>
-						<div class="doc__date doc__file">01.04.2023</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+	
+			<section class="screen_8 screen section" id="screen_8">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_9 screen section" id="screen_9">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_10 screen section" id="screen_10">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
 
-		<div class="twelveth__screen screen slider__news">
-			<div class="screen__wrapper">
-				<div class="news__controls">
-					<div class="screen__title small">Новости</div>
-					<div class="slider__control">
-						<div class="slider__arrow prev"></div>
-						<div class="slider__arrow next"></div>
+				
+			<section class="screen_11 screen section" id="screen_11">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
 					</div>
 				</div>
-				<div class="news__wrapper">
-					<a href="#" class="news__item">
-						<div class="news__img">
-							<img src="img/new__1.jpg" alt="">
+			</section>
+	
+			<section class="screen_12 screen section" id="screen_12">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<span class="news__date">01.04.2023</span>
-						<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
-						<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
-					</a>
-					<a href="#" class="news__item">
-						<div class="news__img">
-							<img src="img/new__2.jpg" alt="">
-						</div>
-						<span class="news__date">01.04.2023</span>
-						<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
-						<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
-					</a>
-					<a href="#" class="news__item">
-						<div class="news__img">
-							<img src="img/new__3.jpg" alt="">
-						</div>
-						<span class="news__date">01.04.2023</span>
-						<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
-						<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
-					</a>
-					<a href="#" class="news__item">
-						<div class="news__img">
-							<img src="img/new__4.jpg" alt="">
-						</div>
-						<span class="news__date">01.04.2023</span>
-						<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
-						<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
-					</a>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
+					</div>
 				</div>
-			</div>
-		</div>
-
-		<footer class="footer screen">
-			<div class="footer__wrapper">
-				<div class="company__info">
-					<div class="company__cart">
-						<div class="address company__text">
-							г. Уфа, ул. Новомостовая, д. 1
+			</section>
+	
+			<section class="screen_13 screen section" id="screen_13">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+							</div>
 						</div>
-						<a href="tel:+79991234567" class="phone company__text">
-							+7 (999) 123-45-67
+					</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_14 screen section" id="screen_14">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_15 screen section" id="screen_15">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__text left">
+								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
+								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/sixth__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_16 screen section" id="screen_16">
+				<div class="screen__wrapper row-reverse">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="screen__subtitle color">преимущества</div>
+							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__text left">
+								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/10
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right">
+						<img src="img/seventh__screen.jpg" alt="">
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_18 screen section" id="screen_18">
+				<div class="screen__wrapper">
+					<div class="map__icons">
+						<div class="map__icon med">
+							<img src="img/med.svg" alt="">
+							<span class="map__icon__text">БГМУ</span>
+						</div>
+						<div class="map__icon theatre">
+							<img src="img/theatre.svg" alt="">
+							<span class="map__icon__text">театр драмы имени М. Гафури</span>
+						</div>
+						<div class="map__icon garden_lenin">
+							<img src="img/garden.svg" alt="">
+							<span class="map__icon__text">Парк имени Ленина</span>
+						</div>
+						<div class="map__icon rebup">
+							<img src="img/rebup.svg" alt="">
+							<span class="map__icon__text">Дом Республики</span>
+						</div>
+						<div class="map__icon kurul">
+							<img src="img/flag.svg" alt="">
+							<span class="map__icon__text">Курултай</span>
+						</div>
+						<div class="map__icon minz">
+							<img src="img/flag.svg" alt="">
+							<span class="map__icon__text">Минздрав</span>
+						</div>
+						<div class="map__icon ziya">
+							<img src="img/garden.svg" alt="">
+							<span class="map__icon__text">Сквер им. Зии Нуриева</span>
+						</div>
+						<div class="map__icon museum">
+							<img src="img/museum.svg" alt="">
+							<span class="map__icon__text">Дом-музей А.Э. Тюлькина</span>
+						</div>
+						<div class="map__icon musul">
+							<img src="img/person.svg" alt="">
+							<span class="map__icon__text">Управление мусульман</span>
+						</div>
+						<div class="map__icon aleya">
+							<img src="img/garden.svg" alt="">
+							<span class="map__icon__text">Софьюшкина алея</span>
+						</div>
+						<div class="map__icon aksak">
+							<img src="img/museum.svg" alt="">
+							<span class="map__icon__text">Дом-музей С.Т. Аксакова</span>
+						</div>
+						<div class="map__icon syu">
+							<img src="img/garden.svg" alt="">
+							<span class="map__icon__text">Сад Салавата Юлаева</span>
+						</div>
+						<div class="map__icon most">
+							<img src="img/most.svg" alt="">
+							<span class="map__icon__text">Висячий мост</span>
+						</div>
+						<div class="map__icon new__bridge">
+							<img src="img/NB.svg" alt="">
+						</div>
+					</div>
+					<div class="map__imgs">
+						<div class="map__img hero"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img dinamo"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img republic"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img matrosov"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img aksakov"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img tower"><img src="img/dinamo__img.jpg" alt=""></div>
+						<div class="map__img new__bridge"><img src="img/dinamo__img.jpg" alt=""></div>
+					</div>
+					<div class="map__more">Посмотреть</div>
+				</div>
+			</section>
+
+			<section class="apartment" id="apartment">
+				<div class="apartment__wrapper">
+					<div class="apartament__bg">
+						<img src="img/home.jpg" alt="" usemap="#apart">
+						
+					</div>
+					<div class="apart__cord">
+						<div class="floors">
+							<svg class="floor__9" xmlns="http://www.w3.org/2000/svg" width="1254" height="649" viewBox="0 0 1254 649" fill="none">
+								<path d="M1254 649V579.031L481.198 9.13443C477.104 6.46388 466.138 0.909115 455.029 0.054537C443.92 -0.800041 423.341 8.60032 414.44 13.4073L84.3833 150.674V183.789L0 217.972V286.872L143.131 230.791L136.188 225.984V217.972L123.905 212.097L124.973 199.812L460.904 107.945L1254 649Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__8" xmlns="http://www.w3.org/2000/svg" width="1431" height="711" viewBox="0 0 1431 711" fill="none">
+								<path d="M1430.07 605.208V710.965L528.466 179.512L0.752251 303.963V188.592L213.867 106.337V88.1772L524.727 0.046875L1430.07 605.208Z" fill="white" fill-opacity="0.35"/>
+							</svg>
+							<svg class="floor__7" xmlns="http://www.w3.org/2000/svg" width="1432" height="616" viewBox="0 0 1432 616" fill="none">
+								<path d="M0.820496 121.794V264.939L529.602 155.978L1431.74 615.323V522.386L527.466 0.0136719L0.820496 121.794Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__6" xmlns="http://www.w3.org/2000/svg" width="1437" height="540" viewBox="0 0 1437 540" fill="none">
+								<path d="M0.615757 104.986V248.131L532.068 157.33L1436.87 539.762V447.893L530.466 0.832031L0.615757 104.986Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__5" xmlns="http://www.w3.org/2000/svg" width="1437" height="464" viewBox="0 0 1437 464" fill="none">
+								<path d="M0.684002 231.857V89.2464L529.466 0.582031L1436.94 370.195V463.667L532.136 159.217L0.684002 231.857Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__4" xmlns="http://www.w3.org/2000/svg" width="1438" height="386" viewBox="0 0 1438 386" fill="none">
+								<path d="M0.0816345 67.7682V211.981L531.534 158.035L1437.41 385.037V290.498L531.534 0.46875L0.0816345 67.7682Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__3" xmlns="http://www.w3.org/2000/svg" width="1438" height="309" viewBox="0 0 1438 309" fill="none">
+								<path d="M0.547512 51.4033V195.198L532.878 161.2L1437.34 308.34V213.591L532.878 0.684814L0.547512 51.4033Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+							<svg class="floor__2" xmlns="http://www.w3.org/2000/svg" width="1440" height="229" viewBox="0 0 1440 229" fill="none">
+								<path d="M536.326 158.559L0.342773 176.358V31.7416L536.326 0.0373535L1439.27 134.085V228.642L536.326 158.559Z" fill="white" fill-opacity="0.37"/>
+							</svg>
+						</div>
+					</div>
+					<div class="apart__info">
+						<div class="high">
+							<div class="ai__title">08</div>
+							<div class="ai__text">этаж</div>
+						</div>
+						<div class="count__of__sales">
+							<div class="ai__title">02</div>
+							<div class="ai__text">квартир в продаже</div>
+						</div>
+						<div class="square">
+							<div class="ai__title">37-125 м<sup>2</sup></div>
+							<div class="ai__text">площадь</div>
+						</div>
+					</div>
+					<div class="parking">паркинг</div>
+				</div>
+			</section>
+	
+			<section class="screen_20 screen section" id="screen_20">
+				<div class="screen__wrapper row-direction">
+					<div class="wrapper__left">
+						<div class="inner__wrapper__left">
+							<div class="title__block inner__item">
+								<div class="screen__title small">Ход строительства</div>
+								<a href="#" class="play__btn">видео-онлайн</a>
+							</div>
+							<div class="year__block inner__item">
+								<div class="inner__item__title">год</div>
+								<div class="inner__item__value year active">2023</div>
+							</div>
+							<div class="month__block inner__item">
+								<div class="inner__item__title">месяц</div>
+								<div class="inner__item__value month active">Июнь</div>
+								<div class="inner__item__value month">Июль</div>
+								<div class="inner__item__value month">Август</div>
+								<div class="inner__item__value month">Сентябрь</div>
+							</div>
+						</div>
+					</div>
+					<div class="wrapper__right relative">
+						<a href="#" class="play__btn absolute">Смотреть</a>
+					</div>
+					<div class="gallery__modal">
+						<div class="modal__gallery__close">
+							<span class="mmc__text">Закрыть</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+								<line x1="16.9102" y1="0.353569" x2="1.35384" y2="15.9099" stroke="white"/>
+								<line x1="16.2031" y1="15.9099" x2="0.64674" y2="0.353554" stroke="white"/>
+							</svg>
+						</div>
+						<div class="screen__wrapper relative">
+							<div class="slider__control absolute">
+								<div class="slider__arrow prev"></div>
+								<div class="slider__counter">
+									<span class="color">1</span>/10
+								</div>
+								<div class="slider__arrow next"></div>
+							</div>
+							<img src="img/tenth__screen.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_21 screen section" id="screen_21">
+				<div class="screen__wrapper">
+					<div class="screen__title small">Документы</div>
+					<div class="docs__wrapper">
+						<div class="doc__item">
+							<div class="doc__left">
+								<a href="#" class="doc__btn"></a>
+								<div class="doc__info">
+									<div class="doc__title">Документ номер 1</div>
+									<div class="doc__file">PDF, 817,76 KB</div>
+								</div>
+							</div>
+							<div class="doc__date doc__file">01.04.2023</div>
+						</div>
+						<div class="doc__item">
+							<div class="doc__left">
+								<a href="#" class="doc__btn"></a>
+								<div class="doc__info">
+									<div class="doc__title">Документ номер 2</div>
+									<div class="doc__file">PDF, 817,76 KB</div>
+								</div>
+							</div>
+							<div class="doc__date doc__file">01.04.2023</div>
+						</div>
+						<div class="doc__item">
+							<div class="doc__left">
+								<a href="#" class="doc__btn"></a>
+								<div class="doc__info">
+									<div class="doc__title">Документ номер 3</div>
+									<div class="doc__file">PDF, 817,76 KB</div>
+								</div>
+							</div>
+							<div class="doc__date doc__file">01.04.2023</div>
+						</div>
+						<div class="doc__item">
+							<div class="doc__left">
+								<a href="#" class="doc__btn"></a>
+								<div class="doc__info">
+									<div class="doc__title">Документ номер 4</div>
+									<div class="doc__file">PDF, 817,76 KB</div>
+								</div>
+							</div>
+							<div class="doc__date doc__file">01.04.2023</div>
+						</div>
+					</div>
+				</div>
+			</section>
+	
+			<section class="screen_22 screen slider__news section" id="screen_22">
+				<div class="screen__wrapper">
+					<div class="news__controls">
+						<div class="screen__title small">Новости</div>
+						<div class="slider__control">
+							<div class="slider__arrow prev"></div>
+							<div class="slider__arrow next"></div>
+						</div>
+					</div>
+					<div class="news__wrapper">
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__1.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
+						</a>
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__2.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
+						</a>
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__3.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
+						</a>
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__4.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
 						</a>
 					</div>
-					<a href="#" class="presentation">
-						<div class="download"></div>
-						<span class="download__text">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</span>
-					</a>
 				</div>
-				<div class="footer__links">
-					<a href="#" class="footer__link">Разрешение на строительство</a>
-					<a href="#" class="footer__link">Проектная декларация</a>
-					<div class="beznebes">Разработка сайта - <a href="https://beznebes.ru/" class="footer__link">Beznebes</a></div>
+			</section>
+	
+			<footer class="footer screen section" id="screen_12">
+				<div class="footer__wrapper">
+					<div class="company__info">
+						<div class="company__cart">
+							<div class="address company__text">
+								г. Уфа, ул. Новомостовая, д. 1
+							</div>
+							<a href="tel:+79991234567" class="phone company__text">
+								+7 (999) 123-45-67
+							</a>
+						</div>
+						
+					</div>
+					<div class="footer__links">
+						<a href="#" class="footer__link">Разрешение на строительство</a>
+						<a href="#" class="footer__link">Проектная декларация</a>
+						<div class="beznebes">Разработка сайта - <a href="https://beznebes.ru/" class="footer__link">Beznebes</a></div>
+					</div>
+					<div class="new__bridge">NEW BRIDGE</div>
 				</div>
-				<div class="new__bridge">NEW BRIDGE</div>
-			</div>
-		</footer>
+			</footer>
+
+		</div>
+	
 	</main>
 
 	
@@ -387,6 +914,9 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/gsap/gsap.min.js"></script>
+	<script src="libs/gsap/ScrollTrigger.min.js"></script>
+	<script src="libs/fullpage/fullpage.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
