@@ -380,7 +380,7 @@ a.menu.header__control:hover > span.menu__lines span.menu__line {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .screen__text p {
