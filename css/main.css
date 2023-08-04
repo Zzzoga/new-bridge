@@ -708,6 +708,7 @@ span.map__icon__text {
 .map__icon.new__bridge {
     left: 1117px;
     top: 467px;
+    border: none;
 }
 
 .screen_19 .screen__title.small {
