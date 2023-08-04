@@ -173,6 +173,35 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 1000)
 	})
 
+	// MODAL VIDEO FUNCTION
+	document.querySelector('.inner__wrapper__left a.play__btn').addEventListener('click', e => {
+		e.preventDefault()
+		document.querySelector('html').style.overflowY = 'hidden'
+		document.querySelector('.video__modal').style.display = 'flex'
+		setTimeout(()=> {
+			document.querySelector('.video__modal').style.opacity = '1'
+			document.querySelector('.video__modal').style.transform = 'scale(1)'
+		}, 500)
+		setTimeout(()=> {
+			document.querySelector('.video__btn').style.opacity = '1'
+			document.querySelector('.video__modal__close').style.opacity = '1'
+		}, 1500)
+	})
+
+	document.querySelector('.video__modal__close').addEventListener('click', e => {
+		e.preventDefault()
+		document.querySelector('html').style.overflowY = 'visible'
+		document.querySelector('.video__btn').style.opacity = '0'
+		document.querySelector('.video__modal__close').style.opacity = '0'
+		setTimeout(()=> {
+			document.querySelector('.video__modal').style.opacity = '0'
+			document.querySelector('.video__modal').style.transform = 'scale(1.5)'
+		}, 500)
+		setTimeout(()=> {
+			document.querySelector('.video__modal').style.display = 'none'
+		}, 1500)
+	})
+
 	// SHOW/HIDE NEWS MODAL FUNCTIONS
 	document.querySelector('.modal__news__close').addEventListener('click', (e)=> {
 		e.preventDefault()

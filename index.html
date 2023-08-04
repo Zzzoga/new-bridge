@@ -12,9 +12,6 @@
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,6 +19,7 @@
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
 	<link rel="stylesheet" href="libs/fullpage/fullpage.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -146,15 +144,15 @@
 				<div class="modal__apart__item__info">
 					<div class="maii__square">
 						<span class="maii__value"></span>
-						<span class="maii__text"></span>
+						<span class="maii__text">площадь</span>
 					</div>
 					<div class="maii__floor">
 						<span class="maii__value"></span>
-						<span class="maii__text"></span>
+						<span class="maii__text">этаж</span>
 					</div>
 					<div class="maii__rooms">
 						<span class="maii__value"></span>
-						<span class="maii__text"></span>
+						<span class="maii__text">комнат</span>
 					</div>
 				</div>
 			</div>
@@ -163,8 +161,87 @@
 					<div class="mai__floor__scheme">
 						<img src="img/mai__floor__2.svg" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__2__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f2__a1" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="296" height="192" viewBox="0 0 296 192" fill="none" class="under__scheme">
+								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="296" height="192" viewBox="0 0 296 192" fill="none" class="outer__scheme">
+								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a2" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="144" height="189" viewBox="0 0 144 189" fill="none" class="under__scheme">
+								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="144" height="189" viewBox="0 0 144 189" fill="none" class="outer__scheme">
+								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a3" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="151" height="190" viewBox="0 0 151 190" fill="none" class="under__scheme">
+								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="151" height="190" viewBox="0 0 151 190" fill="none" class="outer__scheme">
+								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a4" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="117" height="190" viewBox="0 0 117 190" fill="none" class="under__scheme">
+								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="117" height="190" viewBox="0 0 117 190" fill="none" class="outer__scheme">
+								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a5" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="217" viewBox="0 0 256 217" fill="none" class="under__scheme">
+								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="217" viewBox="0 0 256 217" fill="none" class="outer__scheme">
+								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a6" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="319" height="243" viewBox="0 0 319 243" fill="none" class="under__scheme">
+								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="319" height="243" viewBox="0 0 319 243" fill="none" class="outer__scheme">
+								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a7" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="154" height="194" viewBox="0 0 154 194" fill="none" class="under__scheme">
+								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="154" height="194" viewBox="0 0 154 194" fill="none" class="outer__scheme">
+								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a8" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="204" height="194" viewBox="0 0 204 194" fill="none" class="under__scheme">
+								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="204" height="194" viewBox="0 0 204 194" fill="none" class="outer__scheme">
+								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a9" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="195" viewBox="0 0 136 195" fill="none" class="under__scheme">
+								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="195" viewBox="0 0 136 195" fill="none" class="outer__scheme">
+								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f2__a10" data-square="48" data-floor="2" data-rooms="3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="309" height="236" viewBox="0 0 309 236" fill="none" class="under__scheme">
+								<path d="M32.5 43.5H0V231.5H243.5V236H308.5L275 2L168.5 1H133L80.5 0L79.7742 34H32.5V43.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="309" height="236" viewBox="0 0 309 236" fill="none" class="outer__scheme">
+								<path d="M32.5 43.5H0V231.5H243.5V236H308.5L275 2L168.5 1H133L80.5 0L79.7742 34H32.5V43.5Z" fill="none"/>
+							</svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__3">
@@ -224,6 +301,21 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal__apart__detail">
+				<div class="mad__wrapper">
+					<div class="mad__scheme">
+						<img src="img/detail__apart.jpg" alt="">
+					</div>
+					<a href="#" class="mad__book">
+						<span class="mad__book__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" viewBox="0 0 16 22" fill="none">
+								<path d="M14 7.85742H13V5.85742C13 3.10742 10.75 0.857422 8 0.857422C5.25 0.857422 3 3.10742 3 5.85742V7.85742H2C1.45 7.85742 1 8.30742 1 8.85742V16.8574C1 19.0574 2.8 20.8574 5 20.8574H11C13.2 20.8574 15 19.0574 15 16.8574V8.85742C15 8.30742 14.55 7.85742 14 7.85742ZM5 5.85742C5 4.20742 6.35 2.85742 8 2.85742C9.65 2.85742 11 4.20742 11 5.85742V7.85742H5V5.85742ZM13 16.8574C13 17.9574 12.1 18.8574 11 18.8574H5C3.9 18.8574 3 17.9574 3 16.8574V9.85742H13V16.8574Z" fill="#CFB895"/>
+							</svg>
+						</span>
+						<span class="mad__book__text">Забронировать</span>
+					</a>
+				</div>
+			</div>
 			<div class="modal__apart__control">
 				<div class="mac__up mac__control">
 					<img src="img/back__arrow.svg" alt="">
@@ -239,7 +331,7 @@
 		</div>
 	</div>
 
-	<header class="header active__apart">
+	<header class="header">
 		<div class="header__wrapper">
 			<div class="left__block">
 				<a href="tel:79991234567" class="call__reverse header__control">Заказать звонок</a>
@@ -364,7 +456,7 @@
 									<div class="slider__control">
 										<div class="slider__arrow prev"></div>
 										<div class="slider__counter">
-											<span class="color">1</span>/10
+											<span class="color">1</span>/6
 										</div>
 										<div class="slider__arrow next"></div>
 									</div>
@@ -383,10 +475,21 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__title small">ИСКУССТВО СОЗДАНИЯ ПРОСТРАНСТВА</div>
 							<div class="screen__text left">
-								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+								<p>Окунитесь в атмосферу роскоши на пути к Вашей квартире</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/7
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -401,21 +504,11 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__title small">СИМФОНИЯ ЖИЗНИ В МЕГАПОЛИСЕ</div>
 							<div class="screen__text left">
-								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/10
-										</div>
-										<div class="slider__arrow next"></div>
-									</div>
-								</div>
+								<p>Мы знаем, как подчеркнуть Ваш статус. Двухуровневые квартиры с террасами - воплощение функционала загородного дома в сердце столицы.</p>
+								<p>Уникальные пентхаусы с потолками высотой до 7 метров. На террасах предусмотрены мангальные зоны и клумбы для растений.</p>
+								<p>Действительно Ваш особый  комфорт под открытым небом. Дом окружен тенистыми парками и прогулочными аллеями.</p>
 							</div>
 						</div>
 					</div>
@@ -430,10 +523,10 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__title small">ПОДЗЕМНЫЙ ПАРКИНГ</div>
 							<div class="screen__text left">
-								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+								<p>Удобный доступ к подземному паркингу с любого этажа на лифте. Современные технологии на страже безопасности Вашего автомобиля.</p>
+								<p>Вы можете выбрать место на уровне -1 в люкс-сегменте или на уровне -2 в комфорт-сегменте.</p>
 							</div>
 						</div>
 					</div>
@@ -448,21 +541,11 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__title small">В ОКРУЖЕНИИ ИСТОРИИ И КУЛЬТУРЫ</div>
 							<div class="screen__text left">
-								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/10
-										</div>
-										<div class="slider__arrow next"></div>
-									</div>
-								</div>
+								<p>Вам доступны новые горизонты культурной жизни города.</p>
+								<p>Дом Окружен улицами со своей историей: одна из первых улиц города — Новомостовая, улица Габдуллы Тукаева, улица Заки Валиди.</p>
+								<p>Мы бережно относимся к этим знаниям и создаем дом с уважением к тому, что помнят улицы, дома и деревья вокруг.</p>
 							</div>
 						</div>
 					</div>
@@ -478,10 +561,10 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__title small">ВАШЕ УНИКАЛЬНОЕ ПРОЧТЕНИЕ</div>
 							<div class="screen__text left">
-								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+								<p>Квартиры — сочетание современного стиля, качества и инноваций, как вы любите. Просторные жилые пространства, где все продумано до мелочей.</p>
+								<p>Вы получаете все преимущества свободной планировки для воплощения вашей мечты без суеты с оформлением документов при передаче квартиры.</p>
 							</div>
 						</div>
 					</div>
@@ -496,21 +579,10 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__title small">ВНУТРЕННЯЯ ИНФРАСТРУКТУРА</div>
 							<div class="screen__text left">
-								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/10
-										</div>
-										<div class="slider__arrow next"></div>
-									</div>
-								</div>
+								<p>Что такое роскошь ХХI века? Это время. Продуманная до мелочей инфраструктура подарит Вам самое ценное — время на себя, близких и друзей.</p>
+								<p>На первом этаже расположен семейный ресторан здорового питания и  бьюти-центр. Для юных жителей предусмотрено развивающее пространство.</p>
 							</div>
 						</div>
 					</div>
@@ -525,10 +597,9 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__title small">ЗОНА КОНСЬЕРЖА</div>
 							<div class="screen__text left">
-								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+								<p>Квалифицированную помощь в вопросах безопасности, уборки, ремонта и проживания окажет консьерж. Рабочее место специалиста скрыто от жильцов, обеспечивая приватность в лобби.</p>
 							</div>
 						</div>
 					</div>
@@ -543,21 +614,9 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__title small">ГОРОД У ВАШИХ НОГ</div>
 							<div class="screen__text left">
-								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/10
-										</div>
-										<div class="slider__arrow next"></div>
-									</div>
-								</div>
+								<p>Жить в историческом центре Уфы — особая привилегия. Сохраняйте время для жизни, не отказывая себе в свободе передвижения. Оставляйте все пробки позади, благодаря удобному выезду из города, как Вы любите.</p>
 							</div>
 						</div>
 					</div>
@@ -572,10 +631,22 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">«NEW BRIDGE» — ДОМ НОВОГО ФОРМАТА</div>
+							<div class="screen__title small">ИНЖЕНЕРНЫЕ РЕШЕНИЯ</div>
 							<div class="screen__text left">
-								<p>Только лучшая архитектура, только самые современные материалы, симбиоз таланта и технологий для Вас!</p>
-								<p>Каждая деталь продумана и выбрана осознанно с целью создать уникальную симфонию неповторимого стиля и индивидуальности. Архитектурный облик дома выдержан в благородном стиле неоклассицизма. Мы собрали экспертов в области архитектуры и, основываясь на истории города и знаниях о современных технологиях, готовы рассказать вам о том, как создаётся лучшее место для жизни.</p>
+								<p>Мы знаем о Ваших высоких требованиях <br>и соблюдаем их.</p>
+								<p>«New Bridge» — высокие технологии <br>и премиальность во всём.</p>
+							</div>
+							<div class="slider__wrapper">
+								<div class="slider__item">
+									<div class="slider__text">Система защиты с противодымными датчиками</div>
+									<div class="slider__control">
+										<div class="slider__arrow prev"></div>
+										<div class="slider__counter">
+											<span class="color">1</span>/7
+										</div>
+										<div class="slider__arrow next"></div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -590,21 +661,9 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
+							<div class="screen__title small">ПЕРЕЕЗЖАЙТЕ В САМОЕ СЕРДЦЕ УФЫ</div>
 							<div class="screen__text left">
 								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/10
-										</div>
-										<div class="slider__arrow next"></div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -781,6 +840,19 @@
 							<img src="img/tenth__screen.jpg" alt="">
 						</div>
 					</div>
+					<div class="video__modal">
+						<div class="video__modal__wrapper">
+							<img src="img/fifth__screen.jpg" alt="">
+							<a href="#" class="video__btn play__btn"><img src="img/video__play__btn.png" alt=""></a>
+							<div class="video__modal__close">
+								<span class="mmc__text">Закрыть</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+									<line x1="16.9102" y1="0.353569" x2="1.35384" y2="15.9099" stroke="white"/>
+									<line x1="16.2031" y1="15.9099" x2="0.64674" y2="0.353554" stroke="white"/>
+								</svg>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 	
@@ -883,13 +955,16 @@
 					<div class="company__info">
 						<div class="company__cart">
 							<div class="address company__text">
-								г. Уфа, ул. Новомостовая, д. 1
+								г. Уфа, <br>ул. Новомостовая, д. 1
 							</div>
 							<a href="tel:+79991234567" class="phone company__text">
 								+7 (999) 123-45-67
 							</a>
 						</div>
-						
+						<div class="company__book">
+							<span class="company__book__text">Предложений поставщиков присылать на почту:</span>
+							<a href="mailto:tender_strateg@mail.ru" class="company__book__mail">tender_strateg@mail.ru</a>
+						</div>
 					</div>
 					<div class="footer__links">
 						<a href="#" class="footer__link">Разрешение на строительство</a>
@@ -917,9 +992,7 @@
 	<script src="libs/gsap/gsap.min.js"></script>
 	<script src="libs/gsap/ScrollTrigger.min.js"></script>
 	<script src="libs/fullpage/fullpage.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
 	<script type="text/javascript">
 		new ScrollyVideo({
@@ -949,7 +1022,9 @@
         touchpadSupport   : true,
     })
     </script>
-	
+
+	<script src="js/init.js"></script>
+	<script src="js/apart.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
