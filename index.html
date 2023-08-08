@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>New Bridge</title>
+	<title>NEW BRIDGE</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -29,14 +29,23 @@
  
 </head>
 
-<body>
+<body preserveAspectRatio="xMinYMin meet">
 
 	<!-- Здесь пишем код -->
-	
-	<div class="hidden"></div>
 
-	<div class="loader">
-		<div class="loader_inner"></div>
+	<div class="preloader">
+		<div class="preloader__wrapper">
+			<div class="preloader__container">
+				<div class="preloader__overlay__left"></div>
+				<div class="preloader__overlay__right"></div>
+				<div class="preloader__logo">
+					<img src="img/preloader__logo.svg" alt="">
+				</div>
+				<div class="preloder__text">
+					<img src="img/preloader__text.svg" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="modal__nav">
@@ -45,16 +54,16 @@
 			<div class="modal__nav__items">
 				<div class="modal__nav__title">Главная страница</div>
 				<div class="nav__items__wrapper">
-					<a href="#" class="nav__item item_1">О клубном доме</a>
-					<a href="#" class="nav__item item_2">Преимущества</a>
-					<a href="#" class="nav__item item_3">Расположение</a>
-					<a href="#" class="nav__item item_4">Выбор квартир</a>
-					<a href="#" class="nav__item item_5">Контакты</a>
+					<a href="#screen_1" class="nav__item item_1">О клубном доме</a>
+					<a href="#screen_5" class="nav__item item_2">Преимущества</a>
+					<a href="#screen_18" class="nav__item item_3">Расположение</a>
+					<a href="#apartment" class="nav__item item_4">Выбор квартир</a>
+					<a href="#screen_23" class="nav__item item_5">Контакты</a>
 				</div>
 				<div class="nav__post__items">
-					<a href="#" class="nav__post__item">Ход строительства</a>
-					<a href="#" class="nav__post__item">Документы</a>
-					<a href="#" class="nav__post__item">Новости</a>
+					<a href="#screen_20" class="nav__post__item">Ход строительства</a>
+					<a href="#screen_21" class="nav__post__item">Документы</a>
+					<a href="#screen_22" class="nav__post__item">Новости</a>
 				</div>
 				<a href="#" class="presentation">
 					<div class="download"></div>
@@ -75,7 +84,7 @@
 					<img src="img/modal__nav__img__4.jpg" alt="">
 				</div>
 				<div class="nav__img__wrap">
-					<img src="img/modal__nav__img__4.jpg" alt="">
+					<img src="img/modal__nav__img_5.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -135,7 +144,7 @@
 		<div class="modal__apart__wrapper">
 			<div class="modal__apart__info">
 				<div class="mai__top">
-					<div class="back__btn">
+					<div class="apart back__btn">
 						<div class="back__btn__arrow"><img src="img/back__arrow.svg" alt=""></div>
 						<div class="back__btn__text">К выбору этажа</div>
 					</div>
@@ -162,7 +171,7 @@
 						<img src="img/mai__floor__2.svg" alt="">
 					</div>
 					<div class="mai__floor__aparts">
-						<div class="f2__a1" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a1 a__scheme" data-square="73.17" data-floor="2" data-rooms="3" data-apart="f2__a1">
 							<svg xmlns="http://www.w3.org/2000/svg" width="296" height="192" viewBox="0 0 296 192" fill="none" class="under__scheme">
 								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="#B8A17F"/>
 							</svg>
@@ -170,7 +179,7 @@
 								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a2" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a2 a__scheme" data-square="40.35" data-floor="2" data-rooms="2" data-apart="f2__a2">
 							<svg xmlns="http://www.w3.org/2000/svg" width="144" height="189" viewBox="0 0 144 189" fill="none" class="under__scheme">
 								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="#B8A17F"/>
 							</svg>
@@ -178,7 +187,7 @@
 								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a3" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a3 a__scheme" data-square="40.56" data-floor="2" data-rooms="2" data-apart="f2__a3">
 							<svg xmlns="http://www.w3.org/2000/svg" width="151" height="190" viewBox="0 0 151 190" fill="none" class="under__scheme">
 								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="#B8A17F"/>
 							</svg>
@@ -186,7 +195,7 @@
 								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a4" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a4 a__scheme" data-square="27.81" data-floor="2" data-rooms="1" data-apart="f2__a4">
 							<svg xmlns="http://www.w3.org/2000/svg" width="117" height="190" viewBox="0 0 117 190" fill="none" class="under__scheme">
 								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="#B8A17F"/>
 							</svg>
@@ -194,7 +203,7 @@
 								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a5" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a5 a__scheme" data-square="70.66" data-floor="2" data-rooms="3" data-apart="f2__a5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="217" viewBox="0 0 256 217" fill="none" class="under__scheme">
 								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="#B8A17F"/>
 							</svg>
@@ -202,7 +211,7 @@
 								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a6" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a6 a__scheme" data-square="99.25" data-floor="2" data-rooms="4" data-apart="f2__a6">
 							<svg xmlns="http://www.w3.org/2000/svg" width="319" height="243" viewBox="0 0 319 243" fill="none" class="under__scheme">
 								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="#B8A17F"/>
 							</svg>
@@ -210,7 +219,7 @@
 								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a7" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a7 a__scheme" data-square="39.49" data-floor="2" data-rooms="2" data-apart="f2__a7">
 							<svg xmlns="http://www.w3.org/2000/svg" width="154" height="194" viewBox="0 0 154 194" fill="none" class="under__scheme">
 								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="#B8A17F"/>
 							</svg>
@@ -218,7 +227,7 @@
 								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a8" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a8 a__scheme" data-square="59.75" data-floor="2" data-rooms="3" data-apart="f2__a8">
 							<svg xmlns="http://www.w3.org/2000/svg" width="204" height="194" viewBox="0 0 204 194" fill="none" class="under__scheme">
 								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="#B8A17F"/>
 							</svg>
@@ -226,7 +235,7 @@
 								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a9" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a9 a__scheme" data-square="44.39" data-floor="2" data-rooms="2" data-apart="f2__a9">
 							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="195" viewBox="0 0 136 195" fill="none" class="under__scheme">
 								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="#B8A17F"/>
 							</svg>
@@ -234,7 +243,7 @@
 								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="none"/>
 							</svg>
 						</div>
-						<div class="f2__a10" data-square="48" data-floor="2" data-rooms="3">
+						<div class="f2__a10 a__scheme" data-square="92.84" data-floor="2" data-rooms="4" data-apart="f2__a10">
 							<svg xmlns="http://www.w3.org/2000/svg" width="309" height="236" viewBox="0 0 309 236" fill="none" class="under__scheme">
 								<path d="M32.5 43.5H0V231.5H243.5V236H308.5L275 2L168.5 1H133L80.5 0L79.7742 34H32.5V43.5Z" fill="#B8A17F"/>
 							</svg>
@@ -248,63 +257,504 @@
 					<div class="mai__floor__scheme">
 						<img src="img/mai__floor__3.svg" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__3__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f3__a1 a__scheme" data-square="73.17" data-floor="3" data-rooms="3" data-apart="f2__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="296" height="192" viewBox="0 0 296 192" fill="none" class="under__scheme">
+								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="296" height="192" viewBox="0 0 296 192" fill="none" class="outer__scheme">
+								<path d="M289 189.5H258.5V186H188.5V192H179.5V185H157V191H59V181.5H18L0.5 62H54V0H95H296V183H289V189.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a2 a__scheme" data-square="40.35" data-floor="3" data-rooms="2" data-apart="f2__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="144" height="189" viewBox="0 0 144 189" fill="none" class="under__scheme">
+								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="144" height="189" viewBox="0 0 144 189" fill="none" class="outer__scheme">
+								<path d="M0 182V3.5V0H143.5V178H123V183H108V189H98V183H78.5V189H52V182H22V189H13V182H0Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a3 a__scheme" data-square="40.56" data-floor="3" data-rooms="2" data-apart="f2__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="151" height="190" viewBox="0 0 151 190" fill="none" class="under__scheme">
+								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="151" height="190" viewBox="0 0 151 190" fill="none" class="outer__scheme">
+								<path d="M69.5 189.5H42.5V182H18.5V136.5H0.5V70L3.5 67V0H150.5V182.5H136.5V188.5H127V182H69.5V189.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a4 a__scheme" data-square="27.81" data-floor="3" data-rooms="1" data-apart="f2__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="117" height="190" viewBox="0 0 117 190" fill="none" class="under__scheme">
+								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="117" height="190" viewBox="0 0 117 190" fill="none" class="outer__scheme">
+								<path d="M0.5 182.5V0H94.5V129.5H116.5V189H107.5V182.5H69V189.5H42V183H15V189.5H6V182.5H0.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a5 a__scheme" data-square="70.66" data-floor="3" data-rooms="3" data-apart="f2__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="217" viewBox="0 0 256 217" fill="none" class="under__scheme">
+								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="256" height="217" viewBox="0 0 256 217" fill="none" class="outer__scheme">
+								<path d="M0 123V0L178 1H229.5L254 175L255.5 180.5H158V178.5H143V180.5H132.5V178.5H106V181.5H65V216.5H19V188.5H23.5V123H0Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a6 a__scheme" data-square="99.25" data-floor="3" data-rooms="4" data-apart="f2__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="319" height="243" viewBox="0 0 319 243" fill="none" class="under__scheme">
+								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="319" height="243" viewBox="0 0 319 243" fill="none" class="outer__scheme">
+								<path d="M318.5 243V58V57H259V51H249.5V57H231.5V7.5H204L201 11H140.5L43 10L36 0.5H0.5L2 15L9 64L10.5 75.5L14.5 83.5L34 210.5L40.5 243H318.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a7 a__scheme" data-square="39.49" data-floor="3" data-rooms="2" data-apart="f2__a7">
+							<svg xmlns="http://www.w3.org/2000/svg" width="154" height="194" viewBox="0 0 154 194" fill="none" class="under__scheme">
+								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="154" height="194" viewBox="0 0 154 194" fill="none" class="outer__scheme">
+								<path d="M153.5 193.5H2H0.5V6H50V0H78.5V7H103V0H115V11H153.5V193.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a8 a__scheme" data-square="59.75" data-floor="3" data-rooms="3" data-apart="f2__a8">
+							<svg xmlns="http://www.w3.org/2000/svg" width="204" height="194" viewBox="0 0 204 194" fill="none" class="under__scheme">
+								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="204" height="194" viewBox="0 0 204 194" fill="none" class="outer__scheme">
+								<path d="M0.5 193.5V6.5H41V0H81V12H113.5V0.5H151V7H160.5V0.5H170V7H204V193.5H0.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a9 a__scheme" data-square="44.39" data-floor="3" data-rooms="2" data-apart="f2__a9">
+							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="195" viewBox="0 0 136 195" fill="none" class="under__scheme">
+								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="136" height="195" viewBox="0 0 136 195" fill="none" class="outer__scheme">
+								<path d="M135.5 194.5H1.5L0 190L1.5 1.5L9.5 1L10.5 6L45.5 6.5V0H72.5V11.5H107L107.5 0.5L119.5 0V6.5H135.5V194.5Z" fill="none"/>
+							</svg>
+						</div>
+						<div class="f3__a10 a__scheme" data-square="92.84" data-floor="3" data-rooms="4" data-apart="f2__a10">
+							<svg xmlns="http://www.w3.org/2000/svg" width="309" height="236" viewBox="0 0 309 236" fill="none" class="under__scheme">
+								<path d="M32.5 43.5H0V231.5H243.5V236H308.5L275 2L168.5 1H133L80.5 0L79.7742 34H32.5V43.5Z" fill="#B8A17F"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="309" height="236" viewBox="0 0 309 236" fill="none" class="outer__scheme">
+								<path d="M32.5 43.5H0V231.5H243.5V236H308.5L275 2L168.5 1H133L80.5 0L79.7742 34H32.5V43.5Z" fill="none"/>
+							</svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__4">
 					<div class="mai__floor__scheme">
 						<img src="img/mai__floor__4.svg" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__4__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f4__a1 a__scheme" data-square="73.17" data-floor="4" data-rooms="3" data-apart="f4__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="under__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="#B8A17F" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="outer__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f4__a2 a__scheme" data-square="40.35" data-floor="4" data-rooms="2" data-apart="f4__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="under__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="outer__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f4__a3 a__scheme" data-square="76.65" data-floor="4" data-rooms="3" data-apart="f4__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="under__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="outer__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f4__a4 a__scheme" data-square="65.8" data-floor="4" data-rooms="3" data-apart="f4__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="under__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="outer__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f4__a5 a__scheme" data-square="99.25" data-floor="4" data-rooms="4" data-apart="f4__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="under__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="outer__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f4__a6 a__scheme" data-square="44.39" data-floor="4" data-rooms="2" data-apart="f4__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="under__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="outer__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f4__a7 a__scheme" data-square="59.75" data-floor="4" data-rooms="3" data-apart="f4__a7">
+							<svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="under__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="outer__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f4__a8 a__scheme" data-square="39.49" data-floor="4" data-rooms="2" data-apart="f4__a8">
+							<svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="under__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="outer__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f4__a9 a__scheme" data-square="92.84" data-floor="4" data-rooms="4" data-apart="f4__a9">
+							<svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="under__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="outer__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__5">
 					<div class="mai__floor__scheme">
 						<img src="img/mai__floor__5.svg" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__5__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f5__a1 a__scheme" data-square="73.17" data-floor="5" data-rooms="3" data-apart="f4__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="under__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="#B8A17F" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="outer__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f5__a2 a__scheme" data-square="40.35" data-floor="5" data-rooms="2" data-apart="f4__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="under__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="outer__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f5__a3 a__scheme" data-square="76.65" data-floor="5" data-rooms="3" data-apart="f4__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="under__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="outer__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f5__a4 a__scheme" data-square="65.8" data-floor="5" data-rooms="3" data-apart="f4__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="under__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="outer__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f5__a5 a__scheme" data-square="99.25" data-floor="5" data-rooms="4" data-apart="f4__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="under__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="outer__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f5__a6 a__scheme" data-square="44.39" data-floor="5" data-rooms="2" data-apart="f4__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="under__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="outer__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f5__a7 a__scheme" data-square="59.75" data-floor="5" data-rooms="3" data-apart="f4__a7">
+							<svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="under__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="outer__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f5__a8 a__scheme" data-square="39.49" data-floor="5" data-rooms="2" data-apart="f4__a8">
+							<svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="under__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="outer__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f5__a9 a__scheme" data-square="92.84" data-floor="5" data-rooms="4" data-apart="f4__a9">
+							<svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="under__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="outer__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__6">
 					<div class="mai__floor__scheme">
 						<img src="img/mai__floor__6.svg" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__6__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f6__a1 a__scheme" data-square="73.17" data-floor="6" data-rooms="3" data-apart="f4__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="under__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="#B8A17F" />
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="299" height="194" viewBox="0 0 299 194" fill="none" class="outer__scheme">
+								<path d="M291 191H261V187.5H190V194H180.5V187.5H158V194H59V183.5H17.5L0 62.5H56.5V0.5H299V184.5H291V191Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f6__a2 a__scheme" data-square="40.35" data-floor="6" data-rooms="2" data-apart="f4__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="under__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="146" height="192" viewBox="0 0 146 192" fill="none" class="outer__scheme">
+								<path d="M13 184.5H1L0.5 0H145.5V180H124.5V185H109V191H99V185H80V191.5H53V184.5H23V191H13V184.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f6__a3 a__scheme" data-square="76.65" data-floor="6" data-rooms="3" data-apart="f4__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="under__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="#B8A17F" />
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="273" height="191" viewBox="0 0 273 191" fill="none" class="outer__scheme">
+								<path d="M3.5 69.5V4.5V0.5H273V191H263V185H224V191H197L138 190.5H128V184H19.5V145H44V138H0V69.5H3.5Z" fill="none" />
+							  </svg>
+						</div>
+						<div class="f6__a4 a__scheme" data-square="65.8" data-floor="6" data-rooms="3" data-apart="f4__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="under__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="244" height="223" viewBox="0 0 244 223" fill="none" class="outer__scheme">
+								<path d="M2.5 126L4.5 0H160.5L217.5 3L243.5 181L234.5 186.5H142.5L137 184.5H125.5L125 186.5L115 186L111.5 184.5H91.5L89 187.5H49V222.5H1L0.5 194.5H2.5V129V126Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f6__a5 a__scheme" data-square="99.25" data-floor="6" data-rooms="4" data-apart="f4__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="under__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="322" height="246" viewBox="0 0 322 246" fill="none" class="outer__scheme">
+								<path d="M321.5 245.5V56.5H261V49H252V55.5H233V7.5L203.5 5.5V10.5L45 9L36.5 0H0.5L40 245.5H321.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f6__a6 a__scheme" data-square="44.39" data-floor="6" data-rooms="2" data-apart="f4__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="under__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="155" height="196" viewBox="0 0 155 196" fill="none" class="outer__scheme">
+								<path d="M0.5 196V8H48.5V0H78V7.5H104V0.5H115V11.5H154.5V196H0.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f6__a7 a__scheme" data-square="59.75" data-floor="6" data-rooms="3" data-apart="f4__a7">
+							<svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="under__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="206" height="196" viewBox="0 0 206 196" fill="none" class="outer__scheme">
+								<path d="M206 195.5H2H0.5V7.5L41 7L41.5 1H49L82 3.5V12.5H114.5V0H147L152.5 6.5H162.5V1H171V6.5H206V195.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f6__a8 a__scheme" data-square="39.49" data-floor="6" data-rooms="2" data-apart="f4__a8">
+							<svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="under__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="137" height="196" viewBox="0 0 137 196" fill="none" class="outer__scheme">
+								<path d="M73.5 0H46.5V7H10.5V0.5H0V196H136.5V1H108.5V12H73.5V0Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f6__a9 a__scheme" data-square="92.84" data-floor="6" data-rooms="4" data-apart="f4__a9">
+							<svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="under__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="316" height="242" viewBox="0 0 316 242" fill="none" class="outer__scheme">
+								<path d="M36 43.5H0V239.5H244.5L250 242L316 240.5L282.5 2L168.5 1H133L82 0V34H36V43.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__7">
 					<div class="mai__floor__scheme">
-						<img src="img/mai__floor__7.svg" alt="">
+						<img src="img/mai__floor__7.png" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__7__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f7__a1 a__scheme" data-square="116.47" data-floor="7" data-rooms="4" data-apart="f7__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="446" height="194" viewBox="0 0 446 194" fill="none" class="under__scheme">
+								<path d="M380.5 192H353.5V184.5H323V191H313.5V184.5H292.5L291 187.5H190V193.5H181L180 188.5H158V192.5H60.5L57 184H17L8.5 122.5L0.5 64L58 62V0.5H445.5V179.5H424.5V185H408.5V191H399V185H380.5V192Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="446" height="194" viewBox="0 0 446 194" fill="none" class="outer__scheme">
+								<path d="M380.5 192H353.5V184.5H323V191H313.5V184.5H292.5L291 187.5H190V193.5H181L180 188.5H158V192.5H60.5L57 184H17L8.5 122.5L0.5 64L58 62V0.5H445.5V179.5H424.5V185H408.5V191H399V185H380.5V192Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f7__a2 a__scheme" data-square="76.65" data-floor="7" data-rooms="3" data-apart="f7__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="275" height="191" viewBox="0 0 275 191" fill="none" class="under__scheme">
+								<path d="M3 66.5V0H274.5V189.5H264V183.5H224.5V191H196.5V183.5H170V190H160V183.5H138.5V189.5H128.5V183.5H19V143.5H44.5V137H0V69.5L3 66.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="275" height="191" viewBox="0 0 275 191" fill="none" class="outer__scheme">
+								<path d="M3 66.5V0H274.5V189.5H264V183.5H224.5V191H196.5V183.5H170V190H160V183.5H138.5V189.5H128.5V183.5H19V143.5H44.5V137H0V69.5L3 66.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f7__a3 a__scheme" data-square="65.8" data-floor="7" data-rooms="3" data-apart="f7__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="243" height="224" viewBox="0 0 243 224" fill="none" class="under__scheme">
+								<path d="M0 224V196H3.5V1.5H160.5L216.5 0.5L243 181.5V188.5H140.5V186H125.5L123 188.5H114V186H99L97 191H48V224H0Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="243" height="224" viewBox="0 0 243 224" fill="none" class="outer__scheme">
+								<path d="M0 224V196H3.5V1.5H160.5L216.5 0.5L243 181.5V188.5H140.5V186H125.5L123 188.5H114V186H99L97 191H48V224H0Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f7__a4 a__scheme" data-square="147.17" data-floor="7" data-rooms="6" data-apart="f7__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="478" height="246" viewBox="0 0 478 246" fill="none" class="under__scheme">
+								<path d="M477.5 245.5V59.5L475 61H438.5V49.5H425V56H406V49.5H372V56H260.5V50H251.5V56.5H236L232 6.5H202.5V10.5H43L37 0.5H0L32 210.5L38 245.5H477.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="478" height="246" viewBox="0 0 478 246" fill="none" class="outer__scheme">
+								<path d="M477.5 245.5V59.5L475 61H438.5V49.5H425V56H406V49.5H372V56H260.5V50H251.5V56.5H236L232 6.5H202.5V10.5H43L37 0.5H0L32 210.5L38 245.5H477.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f7__a5 a__scheme" data-square="100.92" data-floor="7" data-rooms="4" data-apart="f7__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="344" height="196" viewBox="0 0 344 196" fill="none" class="under__scheme">
+								<path d="M344 195.5V0H316V11.5H281.5V6.5H218V0H208V6.5H170.5V0H161.5V6.5H151.5V0H114V11.5H81.5V3.5H50V6.5H0V195.5H344Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="344" height="196" viewBox="0 0 344 196" fill="none" class="outer__scheme">
+								<path d="M344 195.5V0H316V11.5H281.5V6.5H218V0H208V6.5H170.5V0H161.5V6.5H151.5V0H114V11.5H81.5V3.5H50V6.5H0V195.5H344Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f7__a6 a__scheme" data-square="92.84" data-floor="7" data-rooms="4" data-apart="f7__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="315" height="241" viewBox="0 0 315 241" fill="none" class="under__scheme">
+								<path d="M0.5 240.5V45H34.5V34.5H81.5V2.5H233L278 0L281.5 8L310 208L314.5 240.5H0.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="315" height="241" viewBox="0 0 315 241" fill="none" class="outer__scheme">
+								<path d="M0.5 240.5V45H34.5V34.5H81.5V2.5H233L278 0L281.5 8L310 208L314.5 240.5H0.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__8">
 					<div class="mai__floor__scheme">
-						<img src="img/mai__floor__8.svg" alt="">
+						<img src="img/mai__floor__8.png" alt="">
 					</div>
-					<div class="mai__floor__scheme">
-						<div class="mai__floor__8__a1"></div>
+					<div class="mai__floor__aparts">
+						<div class="f8__a1 a__scheme" data-square="194.29" data-floor="8-9" data-rooms="8" data-apart="f8__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="446" height="194" viewBox="0 0 446 194" fill="none" class="under__scheme">
+								<path d="M59.5 184H17L0.5 62H59V0H434L445.5 1V180H424.5V185H409V191.5H399.5V185H381V192H353.5V185H322.5V191.5H290.5V188.5H223H190V194H180.5V188.5H158.5V191.5H59.5V184Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="446" height="194" viewBox="0 0 446 194" fill="none" class="outer__scheme">
+								<path d="M59.5 184H17L0.5 62H59V0H434L445.5 1V180H424.5V185H409V191.5H399.5V185H381V192H353.5V185H322.5V191.5H290.5V188.5H223H190V194H180.5V188.5H158.5V191.5H59.5V184Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f8__a2 a__scheme" data-square="136.29" data-floor="8-9" data-rooms="4" data-apart="f8__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="261" height="192" viewBox="0 0 261 192" fill="none" class="under__scheme">
+								<path d="M225 192H197V185.5H170.5V192H160.5V184.5H138V191H129V184.5H19V139H0.5V70.5L3 68V0.5H223.5V129H260.5V185.5H225V192Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="261" height="192" viewBox="0 0 261 192" fill="none" class="outer__scheme">
+								<path d="M225 192H197V185.5H170.5V192H160.5V184.5H138V191H129V184.5H19V139H0.5V70.5L3 68V0.5H223.5V129H260.5V185.5H225V192Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f8__a3 a__scheme" data-square="133.54" data-floor="8-9" data-rooms="5" data-apart="f8__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="292" height="193" viewBox="0 0 292 193" fill="none" class="under__scheme">
+								<path d="M39 191V131H1.5L0.5 1.5H209L261 0.5L268 18.5L291.5 181.5V187.5H191L188 186H175L172 187.5H162.5V186.5L146 186V190.5L87.5 193H58L39 191Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="292" height="193" viewBox="0 0 292 193" fill="none" class="outer__scheme">
+								<path d="M39 191V131H1.5L0.5 1.5H209L261 0.5L268 18.5L291.5 181.5V187.5H191L188 186H175L172 187.5H162.5V186.5L146 186V190.5L87.5 193H58L39 191Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f8__a4 a__scheme" data-square="241.17" data-floor="8-9" data-rooms="9" data-apart="f8__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="477" height="246" viewBox="0 0 477 246" fill="none" class="under__scheme">
+								<path d="M477 246V58.5L474.5 62.5H437.5V51H426V57H404V50.5H372.5V57H261V51H251V57.5H235V50.5H243.5V8.5H204.5L202.5 10.5H41L39 0.5H0L32.5 211.5L39.5 246H477Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="477" height="246" viewBox="0 0 477 246" fill="none" class="outer__scheme">
+								<path d="M477 246V58.5L474.5 62.5H437.5V51H426V57H404V50.5H372.5V57H261V51H251V57.5H235V50.5H243.5V8.5H204.5L202.5 10.5H41L39 0.5H0L32.5 211.5L39.5 246H477Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f8__a5 a__scheme" data-square="173.06" data-floor="8-9" data-rooms="5" data-apart="f8__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="345" height="197" viewBox="0 0 345 197" fill="none" class="under__scheme">
+								<path d="M0 193.5V7.5H41V1H83V12.5H115V0.5H146L152.5 1V7H161.5V1H171.5V7H208.5V1H218.5V7H281.5V12.5H317V1H328.5V7H344.5V196.5H19L0 193.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="345" height="197" viewBox="0 0 345 197" fill="none" class="outer__scheme">
+								<path d="M0 193.5V7.5H41V1H83V12.5H115V0.5H146L152.5 1V7H161.5V1H171.5V7H208.5V1H218.5V7H281.5V12.5H317V1H328.5V7H344.5V196.5H19L0 193.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f8__a6 a__scheme" data-square="145.55" data-floor="8-9" data-rooms="4" data-apart="f8__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="315" height="240" viewBox="0 0 315 240" fill="none" class="under__scheme">
+								<path d="M0.5 238.5V46L50 43.5H79L83 1.5H243L281 0L310.5 207.5L315 240H32.5L0.5 238.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="315" height="240" viewBox="0 0 315 240" fill="none" class="outer__scheme">
+								<path d="M0.5 238.5V46L50 43.5H79L83 1.5H243L281 0L310.5 207.5L315 240H32.5L0.5 238.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 				<div class="modal__apart__item floor__9">
 					<div class="mai__floor__scheme">
-						<img src="img/mai__floor__9.svg" alt="">
+						<img src="img/mai__floor__9.png" alt="">
 					</div>
 					<div class="mai__floor__scheme">
-						<div class="mai__floor__9__a1"></div>
+						<div class="f9__a1 a__scheme" data-square="194.29" data-floor="8-9" data-rooms="8" data-apart="f8__a1">
+							<svg xmlns="http://www.w3.org/2000/svg" width="394" height="198" viewBox="0 0 394 198" fill="none" class="under__scheme">
+								<path d="M100.5 192.5L94.5 198H62.5L49.5 191.5H0V6H89.5L90 6.5H91L100.5 0H336.5H394V184H373.5L372 189.5H357.5L356.5 196H347V189.5H328L327 196.5H300L299.5 196L298.5 190H268V195L259 196L257.5 189H237L235.5 192.5H165.5H100.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="394" height="198" viewBox="0 0 394 198" fill="none" class="outer__scheme">
+								<path d="M100.5 192.5L94.5 198H62.5L49.5 191.5H0V6H89.5L90 6.5H91L100.5 0H336.5H394V184H373.5L372 189.5H357.5L356.5 196H347V189.5H328L327 196.5H300L299.5 196L298.5 190H268V195L259 196L257.5 189H237L235.5 192.5H165.5H100.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f9__a2 a__scheme" data-square="136.29" data-floor="8-9" data-rooms="4" data-apart="f8__a2">
+							<svg xmlns="http://www.w3.org/2000/svg" width="268" height="197" viewBox="0 0 268 197" fill="none" class="under__scheme">
+								<path d="M123.5 189H20L19.5 148.5H44.5V142H17.5L0.5 141.5V73.5L2 69.5L3 0H208.5L227.5 1V132L266 134L267.5 188.5L231 189.5L228 196.5H199.5L197 190.5H174V195H165L163.5 190.5H141.5L140.5 195L132 196L123.5 189Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="268" height="197" viewBox="0 0 268 197" fill="none" class="outer__scheme">
+								<path d="M123.5 189H20L19.5 148.5H44.5V142H17.5L0.5 141.5V73.5L2 69.5L3 0H208.5L227.5 1V132L266 134L267.5 188.5L231 189.5L228 196.5H199.5L197 190.5H174V195H165L163.5 190.5H141.5L140.5 195L132 196L123.5 189Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f9__a3 a__scheme" data-square="133.54" data-floor="8-9" data-rooms="6" data-apart="f8__a3">
+							<svg xmlns="http://www.w3.org/2000/svg" width="302" height="224" viewBox="0 0 302 224" fill="none" class="under__scheme">
+								<path d="M71.5 196H41.5L39.5 133.5H0V4.5L27.5 0H237.5L268.5 2.5L291.5 124.5L289.5 141L301.5 224H201L193 189.5L177 190.5L169 191.5L165.5 189.5H151.5L149.5 193L71.5 196Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="302" height="224" viewBox="0 0 302 224" fill="none" class="outer__scheme">
+								<path d="M71.5 196H41.5L39.5 133.5H0V4.5L27.5 0H237.5L268.5 2.5L291.5 124.5L289.5 141L301.5 224H201L193 189.5L177 190.5L169 191.5L165.5 189.5H151.5L149.5 193L71.5 196Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f9__a4 a__scheme" data-square="241.17" data-floor="8-9" data-rooms="9" data-apart="f8__a4">
+							<svg xmlns="http://www.w3.org/2000/svg" width="469" height="241" viewBox="0 0 469 241" fill="none" class="under__scheme">
+								<path d="M464 191.5V240.5H23L0.802246 83.2914H23.7666V0.5H72.4999L76.9999 5H188V1.5H257V45H221.5V52H238.5V46H248V52H299L362 52.5V45.5H390L397 52H417V46H430V57H469V181L464 191.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="469" height="241" viewBox="0 0 469 241" fill="none" class="outer__scheme">
+								<path d="M464 191.5V240.5H23L0.802246 83.2914H23.7666V0.5H72.4999L76.9999 5H188V1.5H257V45H221.5V52H238.5V46H248V52H299L362 52.5V45.5H390L397 52H417V46H430V57H469V181L464 191.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f9__a5 a__scheme" data-square="173.06" data-floor="8-9" data-rooms="5" data-apart="f8__a5">
+							<svg xmlns="http://www.w3.org/2000/svg" width="360" height="196" viewBox="0 0 360 196" fill="none" class="under__scheme">
+								<path d="M3.5 146.5V5.5L8 7.5H47V0.5H54L88.5 2.5V12H122V0.5H160V7.5H170V0.5H180.5V7.5H218V1.5H228.5V6.5H293V11.5H328.5V1.5H340.5V6.5H359.5V130L356 149V195.5H0V149L3.5 146.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="196" viewBox="0 0 360 196" fill="none" class="outer__scheme">
+								<path d="M3.5 146.5V5.5L8 7.5H47V0.5H54L88.5 2.5V12H122V0.5H160V7.5H170V0.5H180.5V7.5H218V1.5H228.5V6.5H293V11.5H328.5V1.5H340.5V6.5H359.5V130L356 149V195.5H0V149L3.5 146.5Z" fill="none"/>
+							  </svg>
+						</div>
+						<div class="f9__a6 a__scheme" data-square="145.55" data-floor="8-9" data-rooms="4" data-apart="f8__a6">
+							<svg xmlns="http://www.w3.org/2000/svg" width="318" height="244" viewBox="0 0 318 244" fill="none" class="under__scheme">
+								<path d="M1 194.5V50.5L58 50V21L60.5 5.5H152.5V0.5H163V5H175L179 36H287.5L317.5 243.5H182.5H0V197L1 194.5Z" fill="#B8A17F"/>
+							  </svg>
+							  <svg xmlns="http://www.w3.org/2000/svg" width="318" height="244" viewBox="0 0 318 244" fill="none" class="outer__scheme">
+								<path d="M1 194.5V50.5L58 50V21L60.5 5.5H152.5V0.5H163V5H175L179 36H287.5L317.5 243.5H182.5H0V197L1 194.5Z" fill="none"/>
+							  </svg>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="modal__apart__detail">
 				<div class="mad__wrapper">
 					<div class="mad__scheme">
-						<img src="img/detail__apart.jpg" alt="">
+						<div class="first__floor">
+							<img src="img/detail__apart.jpg" alt="">
+							<span class="floor__text">8 этаж</span>
+						</div>
+						<div class="second__floor">
+							<img src="" alt="">
+							<span class="floor__text">9 этаж</span>
+						</div>
 					</div>
 					<a href="#" class="mad__book">
 						<span class="mad__book__icon">
@@ -316,18 +766,96 @@
 					</a>
 				</div>
 			</div>
+
 			<div class="modal__apart__control">
 				<div class="mac__up mac__control">
 					<img src="img/back__arrow.svg" alt="">
 				</div>
 				<div class="mac__counter">
-					<div class="mac__counter__value">03</div>
+					<div class="mac__counter__value">02</div>
 					<div class="mac__counter__floor">этаж</div>
 				</div>
 				<div class="mac__down mac__control">
 					<img src="img/back__arrow.svg" alt="">
 				</div>
 			</div>
+
+		</div>
+	</div>
+
+	<div class="modal__park">
+		<div class="modal__park__wrapper">
+			<div class="modal__park__info">
+				<div class="mai__top">
+					<div class="park back__btn">
+						<div class="back__btn__arrow"><img src="img/back__arrow.svg" alt=""></div>
+						<div class="back__btn__text">К выбору этажа</div>
+					</div>
+					<div class="modal__apart__title">Паркинг</div>
+				</div>
+			</div>
+			<div class="modal__park__items">
+				<div class="mp__schemes">
+					<div class="mp__item level__2">
+						<img src="img/park_level_2.png" alt="">
+					</div>
+					<div class="mp__item level__1">
+						<img src="img/park_level_1.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="modal__park__control">
+				<div class="mpc__up mac__control">
+					<img src="img/back__arrow.svg" alt="">
+				</div>
+				<div class="mac__counter">
+					<div class="mpc__counter__value">1</div>
+					<div class="mac__counter__floor">уровень</div>
+				</div>
+				<div class="mpc__down mac__control">
+					<img src="img/back__arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__call book">
+		<div class="modal__call__wrapper">
+			<div class="modal__call__close">
+				<span class="mmc__line"></span>
+				<span class="mmc__line"></span>
+			</div>
+			<div class="mc__title">Забронировать квартиру</div>
+			<div class="mc__text">Чтобы забронировать квартиру, <br>оставьте ваши контактные данные, <br>и мы свяжемся с вами</div>
+			<form action="#" id="book__form">
+				<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
+				<input type="tel" name="phone" id="naphoneme" class="form__input" placeholder="Ваш телефон">
+				<div class="form__politic">
+					<input type="checkbox" id="politic__book" name="politic" value="yes" class="custom-checkbox" checked>
+					<label for="politic__book">Согласие на обработку <a href="#">персональных данных</a></label>
+				</div>
+				<input type="submit" value="Отправить" class="form__submit">
+			</form>
+		</div>
+	</div>
+
+	<div class="modal__call calling">
+		<div class="modal__call__wrapper">
+			<div class="modal__call__close">
+				<span class="mmc__line"></span>
+				<span class="mmc__line"></span>
+			</div>
+			<div class="mc__title">Заказать звонок</div>
+			<div class="mc__text">Оставьте ваши контактные <br>данные, и мы свяжемся с вами</div>
+			<form action="#" id="book__form">
+				<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
+				<input type="tel" name="phone" id="naphoneme" class="form__input" placeholder="Ваш телефон">
+				<div class="form__politic">
+					<input type="checkbox" id="politic__calling" name="politic" value="yes" class="custom-checkbox" checked>
+					<label for="politic__calling">Согласие на обработку <a href="#">персональных данных</a></label>
+				</div>
+				<input type="submit" value="Отправить" class="form__submit">
+			</form>
 		</div>
 	</div>
 
@@ -408,14 +936,17 @@
 					<div class="apart__bottom fp-bg">
 						<img src="img/third__screen.jpg" alt="">
 					</div>
+					<div class="apart__bottom fp-bg-next">
+						<img src="img/fifth__screen.jpg" alt="">
+					</div>
 				</div>
 			</section>
 	
-			<section class="screen_3 screen section" id="screen_3">
+			<!-- <section class="screen_3 screen section" id="screen_3">
 				<div class="screen__wrapper">
 					<img src="img/fourth__screen.jpg" alt="">
 				</div>
-			</section>
+			</section> -->
 	
 			<section class="screen_4 screen section" id="screen_4">
 				<div class="screen__wrapper">
@@ -446,21 +977,47 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ</div>
-							<div class="screen__text left">
-								<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/6
+							<div class="slider__items">
+								<div class="si__item">
+									<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ 1</div>
+									<div class="screen__text left">
+										<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
 										</div>
-										<div class="slider__arrow next"></div>
 									</div>
 								</div>
+								<div class="si__item">
+									<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ 2</div>
+									<div class="screen__text left">
+										<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+										</div>
+									</div>
+								</div>
+								<div class="si__item">
+									<div class="screen__title small">ЭКСКЛЮЗИВНОСТЬ 3</div>
+									<div class="screen__text left">
+										<p>Изысканная атмосфера клубного дома сложена жилым пространством квартир и эргономичными зонами общего пользования.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__control">
+								<div class="slider__arrow prev"></div>
+								<div class="slider__counter">
+									<span class="current color">1</span>/<span class="all__item">1</span>
+								</div>
+								<div class="slider__arrow next"></div>
 							</div>
 						</div>
 					</div>
@@ -475,21 +1032,47 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ИСКУССТВО СОЗДАНИЯ ПРОСТРАНСТВА</div>
-							<div class="screen__text left">
-								<p>Окунитесь в атмосферу роскоши на пути к Вашей квартире</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/7
+							<div class="slider__items">
+								<div class="si__item">
+									<div class="screen__title small">ИСКУССТВО СОЗДАНИЯ ПРОСТРАНСТВА 1</div>
+									<div class="screen__text left">
+										<p>Окунитесь в атмосферу роскоши на пути к Вашей квартире</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
 										</div>
-										<div class="slider__arrow next"></div>
 									</div>
 								</div>
+								<div class="si__item">
+									<div class="screen__title small">ИСКУССТВО СОЗДАНИЯ ПРОСТРАНСТВА 2</div>
+									<div class="screen__text left">
+										<p>Окунитесь в атмосферу роскоши на пути к Вашей квартире</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+										</div>
+									</div>
+								</div>
+								<div class="si__item">
+									<div class="screen__title small">ИСКУССТВО СОЗДАНИЯ ПРОСТРАНСТВА 3</div>
+									<div class="screen__text left">
+										<p>Окунитесь в атмосферу роскоши на пути к Вашей квартире</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Эксклюзивное оформление парадных и библиотека с камином</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__control">
+								<div class="slider__arrow prev"></div>
+								<div class="slider__counter">
+									<span class="current color">1</span>/<span class="all__item">1</span>
+								</div>
+								<div class="slider__arrow next"></div>
 							</div>
 						</div>
 					</div>
@@ -631,22 +1214,50 @@
 					<div class="wrapper__left">
 						<div class="inner__wrapper__left">
 							<div class="screen__subtitle color">преимущества</div>
-							<div class="screen__title small">ИНЖЕНЕРНЫЕ РЕШЕНИЯ</div>
-							<div class="screen__text left">
-								<p>Мы знаем о Ваших высоких требованиях <br>и соблюдаем их.</p>
-								<p>«New Bridge» — высокие технологии <br>и премиальность во всём.</p>
-							</div>
-							<div class="slider__wrapper">
-								<div class="slider__item">
-									<div class="slider__text">Система защиты с противодымными датчиками</div>
-									<div class="slider__control">
-										<div class="slider__arrow prev"></div>
-										<div class="slider__counter">
-											<span class="color">1</span>/7
+							<div class="slider__items">
+								<div class="si__item">
+									<div class="screen__title small">ИНЖЕНЕРНЫЕ РЕШЕНИЯ 1</div>
+									<div class="screen__text left">
+										<p>Мы знаем о Ваших высоких требованиях <br>и соблюдаем их.</p>
+										<p>«New Bridge» — высокие технологии <br>и премиальность во всём.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Система защиты с противодымными датчиками</div>
 										</div>
-										<div class="slider__arrow next"></div>
 									</div>
 								</div>
+								<div class="si__item">
+									<div class="screen__title small">ИНЖЕНЕРНЫЕ РЕШЕНИЯ 2</div>
+									<div class="screen__text left">
+										<p>Мы знаем о Ваших высоких требованиях <br>и соблюдаем их.</p>
+										<p>«New Bridge» — высокие технологии <br>и премиальность во всём.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Система защиты с противодымными датчиками</div>
+										</div>
+									</div>
+								</div>
+								<div class="si__item">
+									<div class="screen__title small">ИНЖЕНЕРНЫЕ РЕШЕНИЯ 3</div>
+									<div class="screen__text left">
+										<p>Мы знаем о Ваших высоких требованиях <br>и соблюдаем их.</p>
+										<p>«New Bridge» — высокие технологии <br>и премиальность во всём.</p>
+									</div>
+									<div class="slider__wrapper">
+										<div class="slider__item">
+											<div class="slider__text">Система защиты с противодымными датчиками</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slider__control">
+								<div class="slider__arrow prev"></div>
+								<div class="slider__counter">
+									<span class="current color">1</span>/<span class="all__item">1</span>
+								</div>
+								<div class="slider__arrow next"></div>
 							</div>
 						</div>
 					</div>
@@ -714,7 +1325,7 @@
 						</div>
 						<div class="map__icon aleya">
 							<img src="img/garden.svg" alt="">
-							<span class="map__icon__text">Софьюшкина алея</span>
+							<span class="map__icon__text">Софьюшкина аллея</span>
 						</div>
 						<div class="map__icon aksak">
 							<img src="img/museum.svg" alt="">
@@ -745,11 +1356,10 @@
 				</div>
 			</section>
 
-			<section class="apartment" id="apartment">
+			<div class="apartment" id="apartment">
 				<div class="apartment__wrapper">
 					<div class="apartament__bg">
 						<img src="img/home.jpg" alt="" usemap="#apart">
-						
 					</div>
 					<div class="apart__cord">
 						<div class="floors">
@@ -795,7 +1405,7 @@
 					</div>
 					<div class="parking">паркинг</div>
 				</div>
-			</section>
+			</div>
 	
 			<section class="screen_20 screen section" id="screen_20">
 				<div class="screen__wrapper row-direction">
@@ -833,16 +1443,28 @@
 							<div class="slider__control absolute">
 								<div class="slider__arrow prev"></div>
 								<div class="slider__counter">
-									<span class="color">1</span>/10
+									<span class="current color">1</span>/<span class="all__item"></span>	
 								</div>
 								<div class="slider__arrow next"></div>
 							</div>
-							<img src="img/tenth__screen.jpg" alt="">
+							<div class="gallery__slider">
+								<div class="gallery__slider__item"><img src="img/tenth__screen.jpg" alt=""></div>
+								<div class="gallery__slider__item"><img src="img/third__screen.jpg" alt=""></div>
+								<div class="gallery__slider__item"><img src="img/first__screen.jpg" alt=""></div>
+								<div class="gallery__slider__item"><img src="img/fourth__screen.jpg" alt=""></div>
+							</div>
 						</div>
 					</div>
 					<div class="video__modal">
+						<div class="video__modal__overlay"></div>
 						<div class="video__modal__wrapper">
-							<img src="img/fifth__screen.jpg" alt="">
+							<div class="video__modal__container">
+								<video controls>
+									<source src="video/example.mp4" type="video/mp4">
+									Ваш браузер не поддерживает встроенные видео :(
+								</video>
+								<img src="img/fifth__screen.jpg" alt="">
+							</div>
 							<a href="#" class="video__btn play__btn"><img src="img/video__play__btn.png" alt=""></a>
 							<div class="video__modal__close">
 								<span class="mmc__text">Закрыть</span>
@@ -946,11 +1568,27 @@
 							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
 							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
 						</a>
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__3.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
+						</a>
+						<a href="#" class="news__item">
+							<div class="news__img">
+								<img src="img/new__4.jpg" alt="">
+							</div>
+							<span class="news__date">01.04.2023</span>
+							<h3 class="news__title">De Finibus Bonorum et Malorum</h3>
+							<div class="news__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.....</div>
+						</a>
 					</div>
 				</div>
 			</section>
 	
-			<footer class="footer screen section" id="screen_12">
+			<section class="footer screen section" id="screen_23">
 				<div class="footer__wrapper">
 					<div class="company__info">
 						<div class="company__cart">
@@ -973,7 +1611,7 @@
 					</div>
 					<div class="new__bridge">NEW BRIDGE</div>
 				</div>
-			</footer>
+			</section>
 
 		</div>
 	
@@ -989,17 +1627,20 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/gsap/gsap.min.js"></script>
-	<script src="libs/gsap/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 	<script src="libs/fullpage/fullpage.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
 	<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
 	<script type="text/javascript">
 		new ScrollyVideo({
 		  scrollyVideoContainer: "scrolly-video",
-		  src: "/video/nb_animation_hq.mp4"
+		  src: "/video/nb_animation.mp4"
 		});
 	</script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
     <script>
     SmoothScroll({
@@ -1024,7 +1665,9 @@
     </script>
 
 	<script src="js/init.js"></script>
+	<script src="js/fullpage.js"></script>
 	<script src="js/apart.js"></script>
+	<script src="js/gsap-action.js"></script>
 	<script src="js/common.js"></script>
 	
 </body>
