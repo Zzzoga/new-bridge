@@ -52,23 +52,27 @@
 		<div class="modal__nav__overlay"></div>
 		<div class="modal__nav__wrapper">
 			<div class="modal__nav__items">
-				<div class="modal__nav__title">Главная страница</div>
-				<div class="nav__items__wrapper">
-					<a href="#screen_1" class="nav__item item_1">О клубном доме</a>
-					<a href="#screen_5" class="nav__item item_2">Преимущества</a>
-					<a href="#screen_18" class="nav__item item_3">Расположение</a>
-					<a href="#apartment" class="nav__item item_4">Выбор квартир</a>
-					<a href="#screen_23" class="nav__item item_5">Контакты</a>
+				<div class="mni__left">
+					<div class="modal__nav__title">Главная страница</div>
+					<div class="nav__items__wrapper">
+						<a href="#screen_1" class="nav__item item_1">О клубном доме</a>
+						<a href="#screen_5" class="nav__item item_2">Преимущества</a>
+						<a href="#screen_18" class="nav__item item_3">Расположение</a>
+						<a href="#apartment" class="nav__item item_4">Выбор квартир</a>
+						<a href="#screen_23" class="nav__item item_5">Контакты</a>
+					</div>
 				</div>
-				<div class="nav__post__items">
-					<a href="#screen_20" class="nav__post__item">Ход строительства</a>
-					<a href="#screen_21" class="nav__post__item">Документы</a>
-					<a href="#screen_22" class="nav__post__item">Новости</a>
+				<div class="mni__right">
+					<div class="nav__post__items">
+						<a href="#screen_20" class="nav__post__item">Ход строительства</a>
+						<a href="#screen_21" class="nav__post__item">Документы</a>
+						<a href="#screen_22" class="nav__post__item">Новости</a>
+					</div>
+					<a href="#" class="presentation">
+						<div class="download"></div>
+						<span class="download__text">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</span>
+					</a>
 				</div>
-				<a href="#" class="presentation">
-					<div class="download"></div>
-					<span class="download__text">СКАЧАТЬ ПРЕЗЕНТАЦИЮ</span>
-				</a>
 			</div>
 			<div class="modal__nav__img">
 				<div class="nav__img__wrap">
@@ -825,7 +829,7 @@
 				<span class="mmc__line"></span>
 				<span class="mmc__line"></span>
 			</div>
-			<div class="mc__title">Забронировать квартиру</div>
+			<div class="mc__title">Забронировать <br>квартиру</div>
 			<div class="mc__text">Чтобы забронировать квартиру, <br>оставьте ваши контактные данные, <br>и мы свяжемся с вами</div>
 			<form action="#" id="book__form">
 				<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
@@ -845,7 +849,7 @@
 				<span class="mmc__line"></span>
 				<span class="mmc__line"></span>
 			</div>
-			<div class="mc__title">Заказать звонок</div>
+			<div class="mc__title">Заказать <br>звонок</div>
 			<div class="mc__text">Оставьте ваши контактные <br>данные, и мы свяжемся с вами</div>
 			<form action="#" id="book__form">
 				<input type="text" name="name" id="name" class="form__input" placeholder="Ваше имя">
@@ -862,6 +866,7 @@
 	<header class="header">
 		<div class="header__wrapper">
 			<div class="left__block">
+				<a href="#" class="apartment__mobile header__control">Выбрать квартиру</a>
 				<a href="tel:79991234567" class="call__reverse header__control">Заказать звонок</a>
 				<a href="tel:79991234567" class="call__self header__control"> +7 (999) 123-45-67</a>
 			</div>
@@ -931,6 +936,9 @@
 						<div class="apart__count__item">
 							<div class="apart__count__num">6</div>
 							<div class="apart__count__text">пентхаусов</div>
+						</div>
+						<div class="mobile__counter">
+							<img src="img/counter__mobile.svg" alt="">
 						</div>
 					</div>
 					<div class="apart__bottom fp-bg">
@@ -1354,6 +1362,18 @@
 					</div>
 					<div class="map__more">Посмотреть</div>
 				</div>
+				<div class="mobile__map">
+					<div class="mobile__map__wrapper">
+						<div class="mm__top">
+							<img src="img/mobile__map__top.svg" alt="">
+						</div>
+						<div class="mm__bottom">
+							<div class="mm__bottom__scroll">
+								<img src="img/map__full.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<div class="apartment" id="apartment">
@@ -1425,6 +1445,23 @@
 								<div class="inner__item__value month">Июль</div>
 								<div class="inner__item__value month">Август</div>
 								<div class="inner__item__value month">Сентябрь</div>
+							</div>
+							<div class="mobile__select">
+								<div class="select__year">
+									<div class="ms__title">год</div>
+									<div class="ms__items">
+										<div class="ms__item active">2023</div>
+									</div>
+								</div>
+								<div class="select__month">
+									<div class="ms__title">месяц</div>
+									<div class="ms__items">
+										<div class="ms__item">Июнь</div>
+										<div class="ms__item">Июль</div>
+										<div class="ms__item active">Август</div>
+										<div class="ms__item">Сентябрь</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

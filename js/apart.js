@@ -3,6 +3,7 @@ const modalApartDetail = document.querySelector('.modal__apart__detail')
 
 const modalPark = document.querySelector('.modal__park')
 
+const modalApartInfo = document.querySelector('.modal__apart__info')
 const apartInfo = document.querySelector('.modal__apart__item__info')
 const apartInfoSquare = document.querySelector('.maii__square .maii__value')
 const apartInfoFloor = document.querySelector('.maii__floor .maii__value')
@@ -18,6 +19,12 @@ const apartTextAll = modalApartDetail.querySelectorAll('.floor__text')
 const header = document.querySelector('header')
 
 document.querySelector('a.apartment.header__control').addEventListener('click', e => {
+    e.preventDefault()
+    header.classList.add('active__apart')
+    modalApart.style.transform = 'translateX(0%)'
+})
+
+document.querySelector('a.apartment__mobile.header__control').addEventListener('click', e => {
     e.preventDefault()
     header.classList.add('active__apart')
     modalApart.style.transform = 'translateX(0%)'
@@ -66,11 +73,22 @@ document.querySelector('.apart.back__btn').addEventListener('click', e => {
     } 
 
     if (e.target.closest('.apart.back__btn').querySelector('.apart.back__btn .back__btn__text').textContent === 'К выбору квартиры') {
+        apartInfo.style.opacity = 0
+        if (document.documentElement.clientWidth > 992) {
+            modalApartInfo.style.height = '270px'
+        } else {
+            modalApartInfo.style.height = '280px'
+            modalApartInfo.style.paddingTop = '168px'
+        }    
         modalApartDetail.style.transform = 'translateX(100%)'
         modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'none'
         modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'none'
         apartSchemeAll.forEach(img => {
-            img.style.maxHeight = '500px'
+            if (document.documentElement.clientWidth > 1600) {
+                img.style.maxHeight = '500px'
+            } else if (document.documentElement.clientWidth <= 1600 && document.documentElement.clientWidth > 1280) {
+                img.style.maxHeight = '380px'
+            }    
         })
         apartTextAll.forEach(text => {
             text.style.display = 'none'
@@ -81,7 +99,6 @@ document.querySelector('.apart.back__btn').addEventListener('click', e => {
             document.querySelector('.modal__apart__control').opacity = 1
             apartControl.style.opacity = 1
             apartTitle.style.opacity = 1
-            apartInfo.style.opacity = 0
         }, 1000)
     } 
 })
@@ -102,7 +119,7 @@ document.querySelector('.parking').addEventListener('click', e => {
 
 document.querySelector('.park.back__btn').addEventListener('click', e => {
     e.preventDefault()
-    modalPark.style.transform = 'translateX(100%)'
+    modalPark.style.transform = 'translateX(150%)'
     header.classList.remove('active__apart')
 })
 
@@ -125,12 +142,15 @@ document.querySelector('.mpc__down.mac__control').addEventListener('click', e =>
 // DETAIL APART VIEW
 
 document.querySelectorAll('.outer__scheme').forEach(apart => {
+    
     apart.addEventListener('mouseover', e => {
         e.target.closest('.a__scheme').querySelector('.under__scheme').style.opacity = 1
-        apartInfoSquare.innerHTML = e.target.closest('.a__scheme').dataset.square
-        apartInfoFloor.innerHTML = e.target.closest('.a__scheme').dataset.floor
-        apartInfoRooms.innerHTML = e.target.closest('.a__scheme').dataset.rooms
-        apartInfo.style.opacity = 1
+        if (document.documentElement.clientWidth > 1180) {
+            apartInfoSquare.innerHTML = e.target.closest('.a__scheme').dataset.square
+            apartInfoFloor.innerHTML = e.target.closest('.a__scheme').dataset.floor
+            apartInfoRooms.innerHTML = e.target.closest('.a__scheme').dataset.rooms
+            apartInfo.style.opacity = 1
+        }
     })
 
     apart.addEventListener('mouseout', e => {
@@ -140,7 +160,10 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
 
     apart.addEventListener('click', e => {
         e.preventDefault()
-
+        modalApartInfo.style.height = '100%'
+        if (document.documentElement.clientWidth <= 992) {
+            modalApartInfo.style.paddingTop = '105px'
+        }
         const apartParametr = e.target.closest('.a__scheme').dataset.apart
 
         switch (apartParametr) {
@@ -249,7 +272,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/1.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'
@@ -261,7 +290,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/2.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'
@@ -273,7 +308,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/3.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'
@@ -285,7 +326,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/4.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'
@@ -297,7 +344,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/5.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'
@@ -309,7 +362,13 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                 modalApartDetail.querySelector('.mad__scheme .second__floor img').src = 'img/apart/floor-9/6.svg'
                 modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'flex'
                 apartSchemeAll.forEach(img => {
-                    img.style.maxHeight = '330px'
+                    if (document.documentElement.clientWidth > 1180) {
+                        img.style.maxHeight = '330px'
+                    } else if (document.documentElement.clientWidth <= 1180 && document.documentElement.clientWidth > 992) {
+                        img.style.maxHeight = '280px'
+                    } else if (document.documentElement.clientWidth <= 992) {
+                        img.style.maxHeight = '240px'
+                    }
                 })
                 apartTextAll.forEach(text => {
                     text.style.display = 'flex'

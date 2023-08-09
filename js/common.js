@@ -182,21 +182,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// MODAL NAV IMG CHANGE FUNCTION
 	const modalImgWrapper = document.querySelector('.modal__nav__img')
-	document.querySelector('.nav__item.item_1').addEventListener('mouseover', e => {
-		modalImgWrapper.style.transform = 'translateY(0vh)'
-	})
-	document.querySelector('.nav__item.item_2').addEventListener('mouseover', e => {
-		modalImgWrapper.style.transform = 'translateY(-100vh)'
-	})
-	document.querySelector('.nav__item.item_3').addEventListener('mouseover', e => {
-		modalImgWrapper.style.transform = 'translateY(-200vh)'
-	})
-	document.querySelector('.nav__item.item_4').addEventListener('mouseover', e => {
-		modalImgWrapper.style.transform = 'translateY(-300vh)'
-	})
-	document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
-		modalImgWrapper.style.transform = 'translateY(-400vh)'
-	})
+	if (document.documentElement.clientWidth > 992) {
+		document.querySelector('.nav__item.item_1').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(0vh)'
+		})
+		document.querySelector('.nav__item.item_2').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-100vh)'
+		})
+		document.querySelector('.nav__item.item_3').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-200vh)'
+		})
+		document.querySelector('.nav__item.item_4').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-300vh)'
+		})
+		document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-400vh)'
+		})
+	} else {
+		document.querySelector('.nav__item.item_1').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(0vh)'
+		})
+		document.querySelector('.nav__item.item_2').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-50vh)'
+		})
+		document.querySelector('.nav__item.item_3').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-100vh)'
+		})
+		document.querySelector('.nav__item.item_4').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-150vh)'
+		})
+		document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-200vh)'
+		})
+	}
+	
 
 	// GALLERY SLIDER SHOW/HIDE FUNCTION
 	document.querySelector('#screen_20 .wrapper__right a.play__btn').addEventListener('click', e => {
@@ -287,8 +306,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelector('.modal__news__close').style.opacity = 0
 		setTimeout(()=> {
 			document.querySelector('.modal__news__close').style.display = 'none'
-			document.querySelector('.mnc__right').style.transform = 'translateY(100vh)'
-			document.querySelector('.mnc__left').style.transform = 'translateY(-100vh)'
+			if (document.documentElement.clientWidth > 992) {
+				document.querySelector('.mnc__right').style.transform = 'translateY(100vh)'
+				document.querySelector('.mnc__left').style.transform = 'translateY(-100vh)'
+			} else if (document.documentElement.clientWidth <= 992) {
+				document.querySelector('.mnc__right').style.transform = 'translateX(100vw)'
+				document.querySelector('.mnc__left').style.transform = 'translateX(-100vw)'
+			}
 		}, 500)
 		setTimeout(()=> {
 			document.querySelector('.modal__news').style.opacity = 0
@@ -317,8 +341,13 @@ document.addEventListener('DOMContentLoaded', () => {
 				document.querySelector('.modal__news__close').style.opacity = 1
 			}, 1000)
 			setTimeout(()=> {
-				document.querySelector('.mnc__right').style.transform = 'translateY(0vh)'
-				document.querySelector('.mnc__left').style.transform = 'translateY(0vh)'
+				if (document.documentElement.clientWidth > 992) {
+					document.querySelector('.mnc__right').style.transform = 'translateY(0vh)'
+					document.querySelector('.mnc__left').style.transform = 'translateY(0vh)'
+				} else if (document.documentElement.clientWidth <= 992) {
+					document.querySelector('.mnc__right').style.transform = 'translateX(0vw)'
+					document.querySelector('.mnc__left').style.transform = 'translateX(0vw)'
+				}
 			}, 1500)
 		})
 	})
@@ -481,6 +510,14 @@ document.addEventListener('DOMContentLoaded', () => {
 			e.target.closest('.inner__item__value.month').classList.add('active')
 		})
 	})
+
+	// OTHERS
+	if (document.documentElement.clientWidth <= 540) {
+		document.querySelector('.mm__top img').src = '/img/map__mob__small.svg'
+		document.querySelector('.mm__bottom img').src = '/img/map__full__small.png'
+		document.querySelector('.footer__wrapper .new__bridge').innerHTML = 'NB'
+	}
+	
 
 	window.localStorage.setItem('preloaderIsShown', 'done')
 	

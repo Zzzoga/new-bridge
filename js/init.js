@@ -43,11 +43,34 @@ $('.screen_15 .slider__items').slick({
 });
 
 $('.news__wrapper').slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: '.slider__news .slider__arrow.prev',
-  nextArrow: '.slider__news .slider__arrow.next'
+  nextArrow: '.slider__news .slider__arrow.next',
+  responsive: [
+    {
+      breakpoint: 1180,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
 });
 
 $('.gallery__slider').slick({

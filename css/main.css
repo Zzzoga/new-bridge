@@ -161,6 +161,7 @@ header.header.active__apart {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #CFB895;
+    align-items: center;
 }
 
 a.logo {
@@ -358,9 +359,10 @@ a.menu.header__control:hover > span.menu__lines span.menu__line {
 }
 
 .screen_1.screen {
-    background: url(../img/second__screen.png) no-repeat center center;
+    background: url(../img/mobile_s2.jpg) no-repeat center center;
     background-color: #172341;
     background-blend-mode: normal, luminosity;
+    background-size: cover;
 }
 
 .screen_1 .screen__subtitle.color {
@@ -417,6 +419,7 @@ a.menu.header__control:hover > span.menu__lines span.menu__line {
     bottom: 0;
     transition: all 1s ease;
     height: 50vh;
+    width: 100%;
 }
 
 .next__screen {
@@ -613,7 +616,7 @@ div#screen_2 {
 
 .screen_18.screen {
     background: url(../img/map.jpg) no-repeat center center;
-    background-size: 101%;
+    background-size: cover;
     position: relative;
 }
 
@@ -1048,7 +1051,7 @@ a.company__book__mail:hover {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 24px;
-    padding: 0 27px;
+    padding: 0 14px;
 }
 
 a.footer__link {
@@ -1459,6 +1462,14 @@ span.mmc__text {
     display: none;
     opacity: 0;
     z-index: 9;
+}
+
+.gallery__modal .slider__arrow {
+    background-color: rgba(217, 217, 217, 0.17);
+}
+
+.gallery__modal .slider__arrow:hover {
+    background-color: #192749;
 }
 
 .gallery__slider {
@@ -1889,6 +1900,7 @@ span.maii__text {
     justify-content: space-between;
     padding: 139px 0 68px 62px;
     max-width: 340px;
+    transition: all .5s ease;
 }
 
 .modal__apart__control {
@@ -2524,7 +2536,7 @@ a.mad__book:hover > span.mad__book__text {
     justify-content: center;
     align-items: center;
     transition: all 1s ease;
-    transform: translateX(100%);
+    transform: translateX(150%);
 }
 
 .modal__park__info {
@@ -2862,4 +2874,28 @@ span.mmc__line:nth-child(2) {
     bottom: 48px;
     left: -5px;
     transition: all 1s ease;
+}
+
+/* ANOTHER */
+
+.screen_2 img, .screen_4 img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.apartament__bg img {
+    width: 100%;
+}
+
+main.wrapper {
+    overflow-x: hidden;
+}
+
+.apartment__mobile {
+    display: none;
+}
+
+.mobile__select, .mobile__counter {
+    display: none;
 }
