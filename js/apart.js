@@ -76,9 +76,12 @@ document.querySelector('.apart.back__btn').addEventListener('click', e => {
         apartInfo.style.opacity = 0
         if (document.documentElement.clientWidth > 992) {
             modalApartInfo.style.height = '270px'
-        } else {
+        } else if (document.documentElement.clientWidth <= 992 && document.documentElement.clientWidth > 540) {
             modalApartInfo.style.height = '280px'
             modalApartInfo.style.paddingTop = '168px'
+        } else if (document.documentElement.clientWidth <= 540) {
+            modalApartInfo.style.height = '280px'
+            modalApartInfo.style.paddingTop = '90px'
         }    
         modalApartDetail.style.transform = 'translateX(100%)'
         modalApartDetail.querySelector('.mad__scheme .second__floor').style.display = 'none'
@@ -160,7 +163,11 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
 
     apart.addEventListener('click', e => {
         e.preventDefault()
-        modalApartInfo.style.height = '100%'
+        if (document.documentElement.clientWidth > 540) {
+            modalApartInfo.style.height = '100%'
+        } else {
+            modalApartInfo.style.height = '91vh'
+        }
         if (document.documentElement.clientWidth <= 992) {
             modalApartInfo.style.paddingTop = '105px'
         }
@@ -278,6 +285,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {
@@ -296,6 +305,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {
@@ -314,6 +325,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {
@@ -332,6 +345,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {
@@ -350,6 +365,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {
@@ -368,6 +385,8 @@ document.querySelectorAll('.outer__scheme').forEach(apart => {
                         img.style.maxHeight = '280px'
                     } else if (document.documentElement.clientWidth <= 992) {
                         img.style.maxHeight = '240px'
+                    } else if (document.documentElement.clientWidth <= 540) {
+                        img.style.maxHeight = '190px'
                     }
                 })
                 apartTextAll.forEach(text => {

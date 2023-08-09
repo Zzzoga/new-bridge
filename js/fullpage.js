@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".screen__full");
 
 // this scrolling object just allows us to conveniently call scrolling.enable(), scrolling.disable(), and check if scrolling.enabled is true. 
 // some browsers (like iOS Safari) handle scrolling on a separate thread and can cause things to get out of sync (jitter/jumpy), so when we're animating the scroll position, force an update of GSAP tweens when there's a scroll event in order to maintain synchronization)

@@ -475,6 +475,7 @@ div#screen_2 {
     font-weight: 400;
     /* line-height: 234%; */
     text-transform: uppercase;
+    position: relative;
 }
 
 .apart__count__num {
@@ -1693,6 +1694,7 @@ div#apartment {
     background: #172343;
     color: #fff;
     padding: 4px 37px 19px 24px;
+    width: 305px;
 }
 
 .ai__title {
@@ -2446,7 +2448,7 @@ span.maii__text {
     align-items: center;
     background: #cfb896;
     transition: all 1s ease;
-    transform: translateX(100%);
+    transform: translateX(119%);
 }
 
 span.mad__book__text {
@@ -2683,7 +2685,7 @@ a.mad__book:hover > span.mad__book__text {
 }
 
 .modal__call label {
-    color: rgba(23, 35, 67, 0.85);
+    color: rgb(23 35 67);
     font-size: 16px;
     font-style: normal;
     line-height: normal;
@@ -2777,7 +2779,7 @@ span.mmc__line:nth-child(2) {
     height: 1em;
     flex-shrink: 0;
     flex-grow: 0;
-    border: 1px solid #33394F;
+    border: 1px solid #172343;
     border-radius: 50%;
     margin-right: 0.5em;
     background-repeat: no-repeat;
@@ -2787,8 +2789,8 @@ span.mmc__line:nth-child(2) {
 }
 
 .custom-checkbox:checked+label::before {
-    border-color: #33394F;
-    background-color: #33394F;
+    border-color: #172343;
+    background-color: #172343;
     background-image: url("../img/check.svg");
 }
 
@@ -2798,8 +2800,8 @@ span.mmc__line:nth-child(2) {
 }
   /* стили для активного состояния чекбокса (при нажатии на него) */
 .custom-checkbox:not(:disabled):active+label::before {
-    background-color: #33394F;
-    border-color: #33394F;
+    background-color: #172343;
+    border-color: #172343;
 }
   /* стили для чекбокса, находящегося в фокусе */
 .custom-checkbox:focus+label::before {
@@ -2899,3 +2901,34 @@ main.wrapper {
 .mobile__select, .mobile__counter {
     display: none;
 }
+
+.mobile__map {
+    display: none;
+}
+
+a.apartment__mobile.header__control {
+    display: none;
+}
+
+.apart__count__item::before {
+    content: '';
+    width: 49px;
+    height: 1px;
+    position: absolute;
+    background: #cfb895;
+    top: 50%;
+    left: 124px;
+}
+
+.apart__count__item:nth-child(2)::before {
+    left: 245px;
+}
+
+.apart__count__item:nth-child(3)::before {
+    left: 216px;
+}
+
+.apart__count__item:nth-child(4)::before {
+    width: 0px;
+}
+

@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
 			modalImgWrapper.style.transform = 'translateY(-400vh)'
 		})
-	} else {
+	} else if (document.documentElement.clientWidth <= 992 && document.documentElement.clientWidth > 540) {
 		document.querySelector('.nav__item.item_1').addEventListener('mouseover', e => {
 			modalImgWrapper.style.transform = 'translateY(0vh)'
 		})
@@ -213,6 +213,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
 			modalImgWrapper.style.transform = 'translateY(-200vh)'
+		})
+	} else if (document.documentElement.clientWidth <= 540) {
+		document.querySelector('.nav__item.item_1').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(0vh)'
+		})
+		document.querySelector('.nav__item.item_2').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-25vh)'
+		})
+		document.querySelector('.nav__item.item_3').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-50vh)'
+		})
+		document.querySelector('.nav__item.item_4').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-75vh)'
+		})
+		document.querySelector('.nav__item.item_5').addEventListener('mouseover', e => {
+			modalImgWrapper.style.transform = 'translateY(-100vh)'
 		})
 	}
 	
@@ -255,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// MODAL VIDEO FUNCTION
 	document.querySelector('.inner__wrapper__left a.play__btn').addEventListener('click', e => {
 		e.preventDefault()
-		// document.querySelector('html').style.overflowY = 'hidden'
+		document.querySelector('html').style.overflowY = 'hidden'
 		document.querySelector('.video__modal').style.display = 'flex'
 		setTimeout(()=> {
 			document.querySelector('.video__modal').style.opacity = '1'
@@ -269,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	document.querySelector('.video__modal__close').addEventListener('click', e => {
 		e.preventDefault()
-		// document.querySelector('html').style.overflowY = 'visible'
+		document.querySelector('html').style.overflowY = 'visible'
 		document.querySelector('.video__modal__container video').pause()
 		document.querySelector('.video__btn').style.opacity = '0'
 		document.querySelector('.video__modal__close').style.opacity = '0'
@@ -423,6 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// SHOW/HIDE CALLING MODAL
 	document.querySelector('.modal__call.calling .modal__call__close').addEventListener('click', e => {
+		document.querySelector('html').style.overflowY = 'visible'
 		e.preventDefault()
 		document.querySelector('.modal__call.calling .modal__call__wrapper').style.opacity = 0
 		setTimeout(() => {
@@ -434,6 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	document.querySelector('.modal__call.book .modal__call__close').addEventListener('click', e => {
+		document.querySelector('html').style.overflowY = 'visible'
 		e.preventDefault()
 		document.querySelector('.modal__call.book .modal__call__wrapper').style.opacity = 0
 		setTimeout(() => {
@@ -445,6 +463,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	document.querySelector('a.call__reverse.header__control').addEventListener('click', e => {
+		document.querySelector('html').style.overflowY = 'hidden'
 		e.preventDefault()
 		document.querySelector('.modal__call.calling').style.display = 'flex'
 		setTimeout(() => {
@@ -456,6 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	document.querySelector('a.mad__book').addEventListener('click', e => {
+		document.querySelector('html').style.overflowY = 'hidden'
 		e.preventDefault()
 		document.querySelector('.modal__call.book').style.display = 'flex'
 		setTimeout(() => {
